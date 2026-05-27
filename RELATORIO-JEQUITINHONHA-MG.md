@@ -1,12 +1,14 @@
-# RELATÓRIO INVESTIGATIVO PRELIMINAR
+# RELATÓRIO INVESTIGATIVO PRELIMINAR — VERSÃO EXPANDIDA
 
 ## Administração Municipal de Jequitinhonha/MG
-## Prefeitura, licitações, saúde e consórcios públicos
+## Grupo econômico Souto, consórcios públicos, suspensão TCE-MG e setor licitatório
 
 ---
 
 > **AVISO METODOLÓGICO**
-> Este documento é um relatório preliminar de inteligência de fontes abertas (OSINT) destinado a subsidiar diligências formais. **Nenhuma pessoa nomeada deve ser tratada como culpada.** Todos os achados são classificados quanto ao grau de confirmação. Hipóteses investigativas exigem comprovação documental antes de qualquer providência. Informações iniciais fornecidas pelo usuário estão expressamente sinalizadas como "pendentes de confirmação".
+> Este documento é um relatório preliminar de inteligência de fontes abertas (OSINT) destinado a subsidiar diligências formais. **Nenhuma pessoa ou pessoa jurídica nomeada deve ser tratada como culpada.** Todos os achados são classificados quanto ao grau de confirmação. Hipóteses investigativas exigem comprovação documental antes de qualquer providência. Informações iniciais fornecidas pelo usuário estão expressamente sinalizadas como pendentes de confirmação. **A simples coincidência de sobrenomes em município pequeno não comprova parentesco**, mas configura indício a investigar.
+>
+> **Limitação metodológica importante:** A informação inicial do usuário de que Fernando Souto Moreira estaria "no centro de contratos licitatórios ilícitos e pessoas jurídicas de laranja" é **HIPÓTESE INVESTIGATIVA fornecida pelo usuário**. Este relatório mapeou os elementos societários, contratuais e cadastrais publicamente disponíveis para apoiar **futura verificação documental** — não há, nesta versão, prova de fraude ou interposição irregular de pessoa jurídica. Os achados de quadro societário aqui consolidados são fatos cadastrais públicos; sua qualificação jurídica como ilícito depende de comprovação adicional.
 
 ---
 
@@ -14,573 +16,788 @@
 
 | Item | Conteúdo |
 |---|---|
-| Município | Jequitinhonha |
+| Município investigado | Jequitinhonha |
 | Estado | Minas Gerais |
 | Código IBGE | 3135803 |
-| Período analisado | 2017 – 2026 (com ênfase nos mandatos 2021-2024 e 2025-2028 do Executivo Municipal) |
-| Administração analisada | Poder Executivo Municipal e consórcios públicos com participação do município |
-| Pessoas inicialmente indicadas pelo usuário | Prefeito Nilo; esposa Ana Maria; filho Fernando; Secretária Julimara Ramos Brito; suposto cônjuge Marco Antonio Moreira; Secretária Laura Botelho Antunes; Secretário de Saúde Henrique e sua esposa (não nomeada) |
-| Consórcios analisados | CIMVAJER, CIMBAJE, CIM Jequitinhonha, CISNORJE, CIS-EVMJ, CISMEJE (apenas para descarte de participação) |
-| Setores analisados | Gabinete, Saúde, Administração/Finanças, Desenvolvimento Social, Obras, Educação, Desenvolvimento Econômico/Agricultura, Licitações |
-| Limitações da pesquisa | (i) Portal oficial da Prefeitura (jequitinhonha.mg.gov.br) e portal do CIMVAJER retornaram bloqueio HTTP 403 a tentativas automatizadas de coleta; (ii) Portal de transparência cidadesmg.com.br exige navegação JavaScript dinâmica não acessível por scraping simples; (iii) Diário Oficial dos Municípios Mineiros não permitiu consulta por palavra-chave automatizada; (iv) declaração de bens de candidaturas anteriores a 2024 não foi totalmente recuperada; (v) folha de pagamento completa do município não foi recuperada; (vi) lista nominal de pregoeiros/agentes de contratação/fiscais de contrato não foi recuperada; (vii) contratos e empenhos individuais não foram recuperados. **Diligências formais via Lei de Acesso à Informação são necessárias.** |
+| CNPJ do Município | 18.083.659/0001-14 (MUNICIPIO DE JEQUITINHONHA — Av. Pedro Ferreira, 159, Centro; início de atividade 23/12/1974; situação ATIVA) |
+| Período analisado | 2004 – 2026 (com ênfase nos mandatos 2021-2024 e 2025-2028; histórico eleitoral retroativo a 2004) |
+| Administração analisada | Poder Executivo Municipal, grupo econômico familiar do prefeito, consórcios públicos com participação do município, fornecedores e consórcios privados que utilizam atas de registro de preços |
+| Pessoas inicialmente indicadas pelo usuário | Prefeito Nilo; esposa Ana Maria; filho Fernando (apontado como centro de contratos ilícitos e laranjas); Secretária Julimara Ramos Brito; suposto cônjuge Marco Antonio Moreira; Secretária Laura Botelho Antunes; Secretário de Saúde Henrique e sua esposa |
+| Consórcios analisados | CIMVAJER, CIMBAJE, CIM Jequitinhonha, CISNORJE, CIS-EVMJ, CISMEJE, Consórcio Encostas CIM-Jequitinhonha (privado) |
+| Setores analisados | Gabinete, Saúde, Administração/Finanças, Desenvolvimento Social, Obras, Educação, Desenvolvimento Econômico/Agricultura, Procuradoria, Controladoria, setor licitatório |
+| Limitações da pesquisa | (i) Portais oficiais Prefeitura, CIMVAJER e cnpj.biz/casadosdados retornaram 403/402; (ii) Portal cidadesmg.com.br exige navegação dinâmica; (iii) DOMM/AMM-MG não permite query estruturada via scraping; (iv) Folha de pagamento completa não recuperada; (v) Lista nominal de pregoeiros/fiscais não recuperada. **Os principais quadros societários, CNPJs municipais e dos consórcios foram extraídos da BrasilAPI/Receita Federal** — fonte oficial. |
 | Critérios de classificação | (1) Fato comprovado; (2) Indício forte; (3) Indício médio; (4) Hipótese investigativa; (5) Informação inicial pendente de confirmação; (6) Não localizado em fonte pública consultada. |
 
 ---
 
-## 2. Resumo executivo
+## 2. Resumo executivo expandido
 
-**Principais achados de natureza pública e documental:**
+**Principais achados consolidados:**
 
-1. **CONCENTRAÇÃO FAMILIAR APARENTE NA ADMINISTRAÇÃO DIRETA — Indício forte**
-   A esposa do prefeito, Sra. Ana Maria Ramos Moreira Souto, ocupa formalmente o cargo de Secretária Municipal de Desenvolvimento Social de Jequitinhonha, conforme página oficial da Prefeitura. Trata-se de cargo de natureza política, mas o fato exige análise sob o ângulo da impessoalidade administrativa, dos limites do nepotismo segundo a Súmula Vinculante nº 13 do STF (que excepciona cargos políticos, mas com ressalvas posteriores quanto a desvios de finalidade), e de eventuais vedações específicas na Lei Orgânica Municipal.
+1. **GRUPO ECONÔMICO FAMILIAR DA FAMÍLIA SOUTO É MUITO MAIS AMPLO DO QUE INICIALMENTE INDEXADO — Fato comprovado pela Receita Federal**
+   Foram identificadas **DUAS empresas ATIVAS do grupo familiar** com sócios da família direta do prefeito Nilo Barbuda Souto, e mais uma marca comercial provavelmente vinculada (Agrosouto Fert Sal). A própria família ostenta participação direta:
 
-2. **RECORRÊNCIA DO SOBRENOME "RAMOS" EM CARGOS DE PRIMEIRO ESCALÃO — Indício médio**
-   Três secretários do primeiro escalão ostentam o patronímico "Ramos": (i) Ana Maria **Ramos** Moreira Souto (Desenvolvimento Social, esposa do prefeito); (ii) Julimara **Ramos** Brito (Administração e Finanças); (iii) Henrique **Ramos** de Sousa (Saúde). Há também servidor identificado em base pública como Danniel **Ramos** Oliveira (enfermeiro). A coincidência pode ser fortuita em município pequeno, mas exige verificação documental de parentesco.
+   - **AGRO-SOUTO COMÉRCIO E PECUÁRIA LTDA** (CNPJ 23.823.057/0001-96) — sócios: **Nilo Barbuda Souto** (sócio-administrador desde 04/01/1995) e **Ana Maria Ramos Moreira Souto** (sócia desde 21/06/1989). Representante legal da Ana Maria: **Francisco Cordeiro dos Santos**. Endereço: Av. Pedro Ferreira, 21, Centro, Jequitinhonha/MG. CNAE principal: comércio varejista de medicamentos veterinários. **CNAEs secundários incluem: comércio varejista de armas e munições (4789-0/09), materiais de construção, ferragens, brinquedos, cosméticos, vestuário, plantas, animais vivos, alimentos.** Optante Simples Nacional desde 01/07/2007. Situação ATIVA.
+   - **AGRO-SOUTO NUTRIÇÃO ANIMAL INDÚSTRIA E COMÉRCIO LTDA** (CNPJ 21.720.852/0001-23) — sócios: **Fernando Moreira Souto** (sócio-administrador) e **Gabriella de Moreira Souto** (sócia). Endereço: Av. Rodoviária, 390, Vaticano, Jequitinhonha/MG. CNAE principal: fabricação de alimentos para animais (sal mineral, ração). Capital social: R$ 20.000,00. Telefone (33) 3741-1026. Contador: Pateco Contabilidade (patecocontabilidade@hotmail.com). Aberta em 21/01/2015. Situação ATIVA.
+   - **AGROSOUTO FERT SAL** — Rua Bento V, 540, Jequitinhonha/MG — terceira marca/estabelecimento do grupo, CNPJ não recuperado nesta versão (provavelmente filial ou nome fantasia adicional).
 
-3. **PRESIDÊNCIA DE CONSÓRCIO INTERMUNICIPAL POR PREFEITO INVESTIGADO — Fato comprovado**
-   O prefeito Nilo Barbuda Souto exerce a Presidência da Diretoria Executiva 2025/2026 do **CIMVAJER** (Consórcio Intermunicipal Multifinalitário do Vale do Jequitinhonha e Região, CNPJ 28.168.515/0001-14, sede em Almenara/MG). A informação inicial do usuário de que ele preside um consórcio público está, portanto, confirmada documentalmente para o CIMVAJER. Não foi localizada confirmação pública de presidência simultânea em **outro** consórcio (item pendente de checagem).
+   **A esposa do prefeito Nilo Souto (Ana Maria) está NA ADMINISTRAÇÃO DIRETA do município como Secretária Municipal de Desenvolvimento Social, e simultaneamente é sócia da Agro-Souto Comércio e Pecuária Ltda** — situação que exige investigação rigorosa de eventuais contratações públicas com a empresa, sob o crivo do art. 14, II, da Lei nº 14.133/2021 (impedimentos por parentesco), e da Súmula Vinculante nº 13/STF.
 
-4. **EMPRESA FAMILIAR ATUANTE NO RAMO VETERINÁRIO NO PRÓPRIO MUNICÍPIO — Indício forte**
-   Existe a empresa **Agro-Souto Comércio e Pecuária Ltda** (CNPJ 23.823.057/0001-96), sediada na Avenida Pedro Ferreira nº 21, Centro, Jequitinhonha/MG, ramo de medicamentos veterinários, conforme bases públicas de CNPJ. Reportagens recentes (maio/2026) confirmam que era administrada pelo filho do prefeito, Fernando Souto Moreira, falecido em queda de avião em Belo Horizonte, e que o próprio Nilo Souto é veterinário. A pesquisa de eventuais contratos públicos firmados entre essa empresa (ou empresas correlatas do grupo familiar) e o Município de Jequitinhonha/MG ou consórcios deve ser objeto de diligência prioritária.
+2. **PRESIDÊNCIA DO CIMVAJER — CONSÓRCIO DE SAÚDE — POR PREFEITO INVESTIGADO — Fato comprovado**
+   Dado essencial revelado pela consulta CNPJ na Receita Federal: o **CIMVAJER NÃO É APENAS "multifinalitário" — sua atividade fiscal principal é CNAE 8660-7/00 (Atividades de apoio à gestão de saúde)**, com CNAEs secundários que incluem pronto-socorro (8610-1/02), serviços móveis de urgência tipo SAMU (8621-6/02), laboratórios clínicos (8640-2/02), regulação de atividades de saúde (8412-4/00), engenharia (7112-0/00), transporte intermunicipal de passageiros (4929-9/02), administração pública, entre outros. Sede em Almenara/MG. Constituído em 07/07/2017.
+   **Nilo Barbuda Souto exerce a Presidência da Diretoria Executiva 2025/2026.** A hipótese de o Secretário de Saúde Henrique Ramos de Sousa supervisionar serviços de saúde executados pelo CIMVAJER — e de eventual contratação da esposa dele por consórcio sob influência político-administrativa do município — torna-se **muito mais relevante** com essa redescoberta.
 
-5. **CISNORJE EM ESTADO DE CALAMIDADE FINANCEIRA — Fato comprovado, relevante ao contexto**
-   O CISNORJE — consórcio que cobre 86 municípios da macrorregião Nordeste/Jequitinhonha (SAMU) — decretou estado de calamidade financeira em 06/01/2025, com dívida apurada na ordem de R$ 14 milhões e indícios de rombo regional de R$ 56,8 milhões em reportagens posteriores. O presidente do consórcio à época é o Sr. Marcelo Adriano Xavier de Vasconcelos. O contexto exige verificar se Jequitinhonha/MG está adimplente com os repasses devidos.
+3. **TCE-MG SUSPENDEU EM FEVEREIRO/2026 LICITAÇÃO DO CIM JEQUITINHONHA DE R$ 360,4 MILHÕES — Fato comprovado**
+   Em decisão plenária noticiada por múltiplos veículos da imprensa mineira e em ato administrativo do próprio TCE-MG, a corte de contas suspendeu **9 consórcios públicos e 11 processos licitatórios somando mais de R$ 2 bilhões**, incluindo o **CIM Jequitinhonha — Processo Licitatório 52/2025 (Concorrência Pública nº 052/2025) — registro de preços de R$ 360.385.674,44 para serviços de engenharia destinados à manutenção preventiva e corretiva de vias urbanas/rurais.** As irregularidades apontadas pelo TCE-MG incluem ausência de detalhamento dos serviços, projetos básicos faltantes, levantamentos específicos ausentes, modalidade inadequada, ausência de memória de cálculo, especificações técnicas falhas, risco de orçamentos distorcidos, diferenças de preço suspeitas, quantitativos superestimados que permitem fornecimento fraudulento, e indícios de direcionamento.
 
-6. **ELEIÇÃO E REELEIÇÃO DO PREFEITO; ADVERSÁRIO RECORRENTE COM HOMONÍMIA RELEVANTE — Fato comprovado**
-   Nilo Souto (PDT, número 12) foi eleito em 2020 (49,02%) e reeleito em 2024 (59,87%). Em ambas as eleições, o adversário principal foi Roberto Botelho (PSDB), apresentado em reportagens como ex-prefeito por três mandatos e ex-Secretário Municipal de Saúde. Há **coincidência relevante de sobrenome** com a Sra. "Laura Botelho Antunes", referida pelo usuário como secretária — situação que exige confirmação documental, pois pode configurar (a) parentesco com o adversário derrotado, ou (b) homonímia simples.
+4. **CONSÓRCIO PRIVADO COM NOME COLADO AO CIM JEQUITINHONHA — Indício forte de potencial direcionamento**
+   Em **07/05/2024** (poucos meses antes da licitação suspensa) foi constituído o **CONSÓRCIO ENCOSTAS CIM-JEQUITINHONHA** (CNPJ 55.035.108/0001-01) — um **consórcio de sociedades empresárias privadas**, com sede em Belo Horizonte (Rua Rosa Branca, 230, Pilar), composto por:
+   - **CONSTRUTORA ITAMARACÁ LTDA** (CNPJ 30.018.048/0001-98) — sócios: Belo Holding, Ita Holding, Schiavon Holding, Marcio Duarte Camara, Paulo Cesar Schiavon, Wellington Jose Amaral Belo, Fernanda Camara Jordan. Capital R$ 5.000.000,00. Sede no MESMO endereço do consórcio privado.
+   - **PILAR ENGENHARIA LTDA** (CNPJ 19.984.948/0001-57) — desde 06/08/2025 com Diomedes Moreira Moura como único sócio-administrador.
+   - **Wellington Jose Amaral Belo** como administrador.
+   O **uso do nome "CIM-JEQUITINHONHA" na denominação do consórcio privado** sugere que o agrupamento foi constituído com vista a participar de licitações desse consórcio público. **Não há, nesta investigação, prova de que tenha sido o vencedor de qualquer processo do CIM Jequitinhonha** — mas o padrão exige verificação documental. O Consórcio Encostas CIM-Jequitinhonha é tributado pelo Lucro Presumido.
 
-7. **AUSÊNCIA DE LOCALIZAÇÃO PÚBLICA DA "SECRETÁRIA LAURA BOTELHO ANTUNES" E DA ESPOSA DO SECRETÁRIO DE SAÚDE — Não localizado**
-   Apesar de buscas amplas em mecanismos públicos e na lista oficial de secretarias do site da Prefeitura, **não foi possível confirmar** em fonte pública aberta: (i) a existência da Sra. Laura Botelho Antunes como secretária municipal de Jequitinhonha; (ii) o nome completo da esposa do Secretário de Saúde Henrique Ramos de Sousa, nem a sua eventual atuação por meio de consórcio público. Esses pontos permanecem como informação inicial fornecida pelo usuário, pendentes de confirmação documental.
+5. **POSSÍVEL ARTICULADOR ADMINISTRATIVO LOCAL — FRANCISCO CORDEIRO DOS SANTOS — Indício forte**
+   Foi identificado um mesmo administrador-representante legal atuando em **pelo menos duas pessoas jurídicas** de Jequitinhonha que pertencem a famílias politicamente relevantes:
+   - **Agro-Souto Comércio e Pecuária Ltda** — Francisco Cordeiro dos Santos é representante legal da sócia Ana Maria Ramos Moreira Souto (esposa do prefeito);
+   - **Heferauto Ltda** (CNPJ 21.528.047/0001-00, INAPTA desde 22/01/2019 por omissão de declarações) — Francisco Cordeiro dos Santos é representante legal do sócio **Leonardo Botelho Soares Pereira**, cujo sobrenome **Botelho** coincide com o do principal adversário eleitoral do prefeito (Roberto Botelho/PSDB) e com a Sra. Laura Botelho Antunes referida pelo usuário. Os sócios principais da Heferauto são Fernando Soares Pereira (sócio-administrador desde 22/08/1968) e Leonardo Botelho Soares Pereira (sócio desde 03/09/1991). Atividade: comércio de peças e acessórios para veículos automotores.
 
-**Setores de maior risco aparente:** (i) Secretaria Municipal de Saúde, pelo peso financeiro e pelo entrelaçamento com consórcios e empresa familiar do ramo veterinário; (ii) Setor de Licitações e Contratos, por ausência de dados nominais públicos sobre pregoeiros e fiscais; (iii) CIMVAJER, por concentrar poderes decisórios em prefeito também investigado; (iv) eventuais contratações por dispensa e inexigibilidade.
+   **A coincidência de um mesmo procurador/administrador legal entre empresas das duas principais famílias políticas do município é indício a investigar.** Pode tratar-se de profissional contábil/jurídico local que atende vários clientes — hipótese mais provável — ou de operador de uma rede de interpostas pessoas — hipótese a ser comprovada documentalmente.
 
-**Grau geral de criticidade preliminar:** MÉDIO-ALTO, condicionado à obtenção dos documentos elencados na Seção 17.
+6. **CALAMIDADE FINANCEIRA DO CISNORJE E SUA ABRANGÊNCIA — Fato comprovado**
+   O CISNORJE — consórcio que cobre 86 municípios da macrorregião Nordeste/Jequitinhonha (SAMU 192) — decretou estado de calamidade financeira em 06/01/2025 (Decreto 001/2025, assinado por Marcelo Adriano Xavier de Vasconcelos), com dívida apurada na ordem de R$ 14 milhões e reportagens posteriores indicando rombo regional de R$ 56,8 milhões. **A adimplência de Jequitinhonha/MG com esse consórcio precisa ser verificada.**
 
----
+7. **CONCENTRAÇÃO PATRONÍMICA "RAMOS" EM TRÊS SECRETARIAS DO PRIMEIRO ESCALÃO — Indício médio**
+   Continuam relevantes os patronímicos coincidentes: Ana Maria **Ramos** Moreira Souto, Julimara **Ramos** Brito, Henrique **Ramos** de Sousa, e o servidor Danniel **Ramos** Oliveira. **Sem certidões civis não é possível afirmar parentesco**, mas a coincidência tripla em primeiro escalão em município de pequeno porte é fator a investigar.
 
-## 3. Núcleo político e familiar
+8. **HISTÓRICO POLÍTICO LONGO DO PREFEITO — Fato comprovado**
+   Diferentemente do que se poderia supor, Nilo Barbuda Souto **já foi candidato a Vice-Prefeito em 2004** (CNPJ eleitoral 06.420.229/0001-61 — baixado em 31/12/2004 por encerramento de liquidação voluntária). **O adversário Roberto Alcântara Botelho** foi candidato a Prefeito no mesmo pleito de 2004 (CNPJ eleitoral 06.680.503/0001-31), cumpriu 3 mandatos como prefeito e foi também ex-vice e ex-Secretário Municipal de Saúde de Jequitinhonha — fato que corrobora a hipótese de família Botelho com histórico institucional. Roberto Alcântara é casado com Sônia Madi (sócia da Angelus, conhecida fabricante odontológica) desde 1986.
 
-| Nome | Cargo / função | Vínculo familiar / político | Secretaria / setor | Período | Fonte | Classificação | Relevância investigativa |
-|---|---|---|---|---|---|---|---|
-| Nilo Barbuda Souto | Prefeito Municipal | — | Gabinete | 2021-2024 / 2025-2028 | O Tempo, CNN Brasil, Tribuna PR | Fato comprovado | Alta — autoridade máxima e presidente de consórcio |
-| Ana Maria Ramos Moreira Souto | Secretária Municipal de Desenvolvimento Social | Esposa do Prefeito Nilo Souto | Desenvolvimento Social | Mandato 2025-2028 | Site oficial da Prefeitura (jequitinhonha.mg.gov.br/secretarias/); reportagem O Tempo; Facebook institucional | Fato comprovado | Alta — cônjuge ocupa secretaria |
-| Fernando Souto Moreira | Empresário, veterinário | Filho do prefeito Nilo Souto e Ana Maria | Setor privado — Agro-Souto Comércio e Pecuária Ltda | Falecido em 04/05/2026 | O Tempo, CNN Brasil, Por Dentro de Minas | Fato comprovado | Alta — investigar contratos do grupo familiar com o município |
-| Filha (não nomeada) | — | Filha do prefeito, residente na Austrália | — | — | O Tempo (perfil de Fernando) | Indício forte | Baixa — fora do escopo nacional |
-| Esposa de Fernando (não nomeada) | Veterinária | Nora do prefeito; mãe de dois netos pequenos do prefeito | Setor privado | — | O Tempo | Indício forte | Média — verificar se atua na cadeia de fornecimento veterinária/saúde animal do município |
-| Julimara Ramos Brito | Secretária Municipal de Administração e Finanças | Cônjuge alegado: Marco Antonio Moreira (informação do usuário, não confirmada) | Administração e Finanças | Mandato 2025-2028 | Site oficial da Prefeitura | Fato comprovado (cargo); Informação inicial do usuário pendente de confirmação (cônjuge) | Alta — administração financeira e folha |
-| Marco Antonio Moreira | — | Suposto cônjuge da Sec. Julimara Ramos Brito | — | — | Informação inicial do usuário | Não localizado em fonte pública consultada | Pendente — diligenciar |
-| Henrique Ramos de Sousa | Secretário Municipal de Saúde | Esposa (não nomeada) supostamente vinculada a consórcio público (info. do usuário) | Saúde | Mandato 2025-2028 | Site oficial da Prefeitura; resultado de busca em portais públicos | Fato comprovado (cargo); Informação inicial do usuário pendente de confirmação (esposa em consórcio) | Alta — pasta de maior risco |
-| Esposa do Sec. Henrique (nome não confirmado) | Suposta vinculada a consórcio público | Cônjuge do Secretário Municipal de Saúde | Consórcio público — natureza não confirmada | — | Informação inicial do usuário | Não localizado em fonte pública consultada | Alta — hipótese de conflito de interesse |
-| Laura Botelho Antunes | Suposta secretária municipal | Possui supostamente irmão, marido e familiares na prefeitura (info. do usuário) | Secretaria não identificada | — | Informação inicial do usuário | Não localizado em fonte pública consultada | Pendente — diligenciar |
-| José Augusto Alves Mendes | Secretário Municipal de Obras, Viação e Serviços Urbanos | — | Obras | Mandato 2025-2028 | Site oficial da Prefeitura | Fato comprovado | Média |
-| Angela Francisca de Souza Trindade | Secretária Municipal de Educação, Cultura, Esportes, Lazer e Turismo | — | Educação | Mandato 2025-2028 | Site oficial da Prefeitura | Fato comprovado | Média |
-| Sergio de Pinho Guimarães | Secretário Municipal de Desenvolvimento Econômico Sustentável / Agricultura | — | Desenv. Econômico / Agricultura | Mandato 2025-2028 | Site oficial da Prefeitura | Fato comprovado | Média |
-| Zé Rolinha | Vice-Prefeito (eleito em 2024 pelo PT, na chapa de Nilo Souto) | Aliado político | Gabinete do Vice | 2025-2028 | O Tempo (perfil eleitoral) | Indício forte (nome de urna) | Média — confirmar nome civil |
-| Roberto Botelho | Adversário de Nilo Souto em 2020 e 2024 (PSDB); ex-prefeito de Jequitinhonha por 3 mandatos; ex-Secretário Municipal de Saúde | Possível parentesco com "Laura Botelho Antunes" (hipótese) | Oposição | 1989-2016 (aprox., como prefeito/vice/secretário); candidato em 2020 e 2024 | Aconteceu no Vale; CNN Brasil; SLU/PBH; bases de CNPJ eleitoral (Eleicao 2008 / Eleicoes 2004 Roberto Alcantara Botelho Prefeito) | Indício forte | Alta — checar parentesco |
+9. **JURISDIÇÃO TCE-MG E CARACTERÍSTICA "SAÚDE" DO CIMBAJE — Fato comprovado**
+   O CIMBAJE (CNPJ 07.306.549/0001-58, sede em Jacinto/MG), do qual Jequitinhonha é membro pleno, também tem CNAE principal **8660-7/00 (Atividades de apoio à gestão de saúde)**, com CNAEs secundários cobrindo pronto-socorro, SAMU, vacinação/imunização, laboratórios clínicos e atividades multifinalitárias (apoio à agricultura, pecuária, produção florestal, aquicultura, descontaminação de resíduos). Início: 29/03/2005.
 
----
+10. **CIM JEQUITINHONHA — ESTRUTURADO PARA INFRAESTRUTURA — Fato comprovado**
+    O CIM Jequitinhonha (CNPJ 22.835.076/0001-70, sede em Diamantina), de natureza jurídica "Consórcio Público de Direito Público (Associação Pública)", tem CNAE principal 9499500 (atividades associativas) mas seus CNAEs secundários expõem o foco real: **coleta de resíduos perigosos, construção de rodovias, pintura para sinalização rodoviária, obras de urbanização, redes de abastecimento de água/esgoto, obras de irrigação, construção de instalações esportivas, administração de obras, perfuração e construção de poços de água, transporte rodoviário de cargas e produtos perigosos, serviços de engenharia, cartografia, topografia, desenho técnico, atividades paisagísticas**. Município responsável: **Gouveia/MG**. Presidente: José Eduardo de Paula Rabelo (Prefeito de Couto de Magalhães de Minas).
 
-## 4. Secretários e cargos estratégicos
+**Setores de maior risco aparente:** (i) Setor de licitações da Prefeitura e dos consórcios; (ii) Secretaria Municipal de Saúde, pela intersecção com CIMVAJER, CIMBAJE e CISNORJE; (iii) compras de insumos veterinários e agropecuários — pela presença direta da empresa familiar do prefeito; (iv) obras de engenharia e infraestrutura — pelo caso documentado da suspensão TCE-MG do PL 52/2025 do CIM Jequitinhonha (R$ 360 milhões).
 
-| Nome | Cargo | Secretaria | Ato de nomeação | Remuneração pública | Atribuições básicas | Parentes na administração | Relação com contratos | Relação com consórcios | Fonte |
-|---|---|---|---|---|---|---|---|---|---|
-| Nilo Barbuda Souto | Prefeito | Gabinete | Diploma TSE 2024 + posse | Subsídio definido por lei municipal — não recuperado | Ordenador-geral, representante do município em consórcios | Cônjuge Ana Maria (Sec. Des. Social); filho falecido era empresário privado | Indireta — homologa licitações, assina contratos | Presidente CIMVAJER (2025/2026) | Site oficial; O Tempo; CIMVAJER (Cosecs-MG) |
-| Ana Maria Ramos Moreira Souto | Secretária | Desenvolvimento Social | Não recuperado | Não recuperado | Política de assistência social, CRAS, CREAS, programas sociais | Cônjuge é o Prefeito | Potencial — programas sociais com convênios | Não recuperado | Site oficial; Facebook institucional |
-| Julimara Ramos Brito | Secretária | Administração e Finanças | Não recuperado | Não recuperado | Gestão de pessoal, folha, finanças, compras | Cônjuge: Marco Antonio Moreira (não confirmado) | **Alta** — supervisiona contratações e folha | Indireta — repasses para consórcios | Site oficial |
-| Henrique Ramos de Sousa | Secretário | Saúde | Não recuperado | Não recuperado | Política de saúde, atenção básica, contratos da SMS | Esposa (não confirmada) supostamente em consórcio | **Alta** — contratos médicos, transporte sanitário, medicamentos, exames, terceirizações | **Alta** — representa município em consórcios de saúde | Site oficial |
-| José Augusto Alves Mendes | Secretário | Obras, Viação, Serviços Urbanos | Não recuperado | Não recuperado | Obras, manutenção urbana | Não confirmado | Alta — contratos de obras | Possível (CIMVAJER atua em infraestrutura) | Site oficial |
-| Angela Francisca de Souza Trindade | Secretária | Educação, Cultura, Esportes, Lazer e Turismo | Não recuperado | Não recuperado | Educação básica, programas culturais e esportivos | Não confirmado | Média — merenda, transporte escolar, material didático | Não recuperado | Site oficial |
-| Sergio de Pinho Guimarães | Secretário | Desenvolvimento Econômico Sustentável / Agricultura | Não recuperado | Não recuperado | Fomento, agricultura, meio ambiente municipal | Não confirmado | Média — programas de fomento | Possível | Site oficial |
-| Laura Botelho Antunes (alegada) | Secretária (não confirmado) | Não identificada | Não localizado | Não localizado | — | Familiares na prefeitura (alegação do usuário) | Pendente | Pendente | Informação do usuário |
-| Procurador-Geral do Município | Cargo existente | Procuradoria | Não recuperado | Não recuperado | Pareceres, defesa judicial | Não recuperado | Alta — aprova editais e contratos | Possível | PCI Concursos (estrutura confirmada) |
-| Controlador-Geral do Município | Cargo existente | Controladoria | Não recuperado | Não recuperado | Controle interno | Não recuperado | Alta — verifica regularidade | Possível | PCI Concursos (estrutura confirmada) |
-| Chefe de Gabinete | Cargo existente | Gabinete | Não recuperado | Não recuperado | Coordenação política | Não recuperado | Indireta | Possível | PCI Concursos (estrutura confirmada) |
+**Grau geral de criticidade preliminar:** ALTO. As evidências cadastrais e o ato de suspensão pelo TCE-MG conferem urgência à diligência documental.
 
 ---
 
-## 5. Setor de licitações e contratos
+## 3. Núcleo político e familiar (versão expandida)
 
-**Estado da arte da informação pública:** O Município de Jequitinhonha/MG opera, em 2024-2025, sob a Lei Federal nº 14.133/2021, com edição local mencionada (Portaria nº 024/2023 — não recuperada em texto). Tem-se registro de **55 processos licitatórios em 2024** e **23 processos em 2025** publicados, além de **28 dispensas, 77 pregões eletrônicos e 32 pregões presenciais** em registro. Os **nomes individuais** de agente de contratação, pregoeiro, equipe de apoio, membros de comissão, pesquisadores de preço, fiscais e gestores de contrato **NÃO foram recuperados** por meio das ferramentas automatizadas — exigem requisição formal via LAI.
-
-| Nome | Função | Processo em que atuou | Cargo | Ato de designação | Vínculo com agentes políticos | Vínculo com fornecedores | Fonte | Ponto de atenção |
-|---|---|---|---|---|---|---|---|---|
-| Não localizado | Agente de contratação | — | — | Não recuperado | — | — | — | **Diligência prioritária**: requerer relação nominal via LAI |
-| Não localizado | Pregoeiro(a) | — | — | Não recuperado | — | — | — | **Diligência prioritária** |
-| Não localizado | Equipe de apoio | — | — | Não recuperado | — | — | — | **Diligência prioritária** |
-| Não localizado | Membros de comissão de contratação | — | — | Não recuperado | — | — | — | **Diligência prioritária** |
-| Não localizado | Fiscais de contrato | — | — | Não recuperado | — | — | — | **Diligência prioritária** |
-| Não localizado | Gestores de contrato | — | — | Não recuperado | — | — | — | **Diligência prioritária** |
-| Não localizado | Ordenadores de despesa por secretaria | — | — | Não recuperado | — | — | — | **Diligência prioritária** |
-
----
-
-## 6. Licitações e contratações diretas
-
-**Não foram recuperados os processos individuais** com número, modalidade, objeto, valor estimado, valor contratado, vencedor, CNPJ, sócios, participantes, fiscal, gestor, ordenador, sinais de alerta e grau de risco. Esses dados existem e são públicos — a aquisição deve ocorrer pelo **Portal Nacional de Contratações Públicas (PNCP)** filtrando por município, e por meio de **requisição direta ao setor de licitações**. A consulta automatizada ao portal próprio da Prefeitura retornou bloqueio HTTP 403, e a plataforma Alerta Licitação somente exibiu três editais de 2026 (vestuário e têxteis R$ 1.427.263,00; materiais de escritório R$ 4.804.776,00; chamamento público de alimentação e hospedagem R$ 1.697.940,00) — todos exigem investigação aprofundada.
-
-**Diligência prioritária:** obter relação completa de processos 2021-2026, com vencedores, fiscais e ordenadores. Verificar especialmente:
-- contratações de serviços terceirizados de recepção, vigilância e portaria (objeto confirmado em busca);
-- contratações da Secretaria de Saúde (medicamentos, exames, plantões, transporte sanitário, locação de veículos);
-- contratações no ramo veterinário/agropecuário/insumos animais — confronto necessário com grupo Souto e Agro-Souto;
-- contratos com fornecedores compartilhados entre Prefeitura e CIMVAJER.
-
----
-
-## 7. Empresas contratadas
-
-| Empresa | CNPJ | Sócios públicos conhecidos | Objeto / atividade | Valor contratado | Secretaria | Modalidade | Contratos | Vínculos políticos / familiares / societários | Fonte | Grau de risco |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Agro-Souto Comércio e Pecuária Ltda | 23.823.057/0001-96 | Quadro societário não recuperado integralmente em fonte aberta | CNAE 4771-7/04 — Comércio varejista de medicamentos veterinários; sede Av. Pedro Ferreira, 21, Centro, Jequitinhonha/MG; fundada em 23/11/1987 | **Verificar se tem contratos com o município ou consórcios** | Saúde, Agricultura, Obras (verificar) | — | A apurar | Empresa do grupo familiar do prefeito; administrada pelo filho Fernando Souto Moreira | CNPJ.biz; Solutudo; Petboop; reportagens | **ALTO — diligência prioritária** |
-| Demais fornecedores | Não recuperados | — | — | — | — | — | — | — | — | A apurar |
-
-**Observação grave:** O endereço da Agro-Souto (Av. Pedro Ferreira, 21) está **na mesma via** da sede da Secretaria Municipal de Administração e Finanças (Av. Pedro Ferreira, 159) e da Secretaria de Agricultura (Av. Pedro Ferreira, 47). Coincidência geográfica esperada em município pequeno, mas merece registro.
-
----
-
-## 8. Consórcios públicos
-
-| Nome | Sigla | CNPJ | Área | Municípios | Participação de Jequitinhonha | Cargo de Nilo Souto | Presidente atual | Sede | Fonte | Grau de risco |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Consórcio Intermunicipal Multifinalitário do Vale do Jequitinhonha e Região | **CIMVAJER** | 28.168.515/0001-14 | Multifinalitário (infraestrutura, máquinas, desenvolvimento) | Vale do Jequitinhonha e região | **Membro pleno** | **PRESIDENTE 2025/2026** | **Nilo Barbuda Souto** | Almenara/MG | CIMVAJER (Cosecs-MG); Serasa Experian; CIMVAJER site (403) | **ALTO** |
-| Consórcio Intermunicipal Multifinalitário do Baixo Jequitinhonha | **CIMBAJE** | 07.306.549/0001-58 (a confirmar — base Cosecs) | Multifinalitário | Bandeira, Cachoeira de Pajéu, Capim Branco, Divisópolis, Felizburgo, Jacinto, **Jequitinhonha**, Joaíma, Jordânia, Medina, Palmópolis, Pedra Azul, Rio do Pardo, Rubim, Salto da Divisa, Santa Maria do Salto | **Membro pleno** | Não consta como dirigente | Márcio Ferreira Souto (Prefeito de Pedra Azul) — biênio 2025/2026; antecessor: Oximane Peixoto Bomfim (Prefeito de Salto da Divisa) — 2023/2024 | Pedra Azul/MG (verificar) | Cosecs-MG; CIMBAJE | **MÉDIO-ALTO** — coincidência de sobrenome "Souto" entre presidentes do CIMBAJE e do CIMVAJER exige checagem de eventual parentesco |
-| Consórcio Integrado Multifinalitário do Vale do Jequitinhonha | **CIM Jequitinhonha** | 22.835.076/0001-70 | Infraestrutura urbana e rural, usinas de asfalto, gestão associada | 20 municípios da região | Não confirmada | Não consta como dirigente | José Eduardo de Paula Rabelo (Prefeito de Couto de Magalhães de Minas) | Diamantina/MG (Rua Zeca Bruno, 131) | CNPJ.biz; site CIM Jequitinhonha; CidadesMG transparência | **MÉDIO** — verificar adesão de Jequitinhonha/MG |
-| Consórcio Intermunicipal de Saúde da Rede de Urgência do Nordeste/Jequitinhonha | **CISNORJE** | — | SAMU 192 — emergência pré-hospitalar | 86 municípios + Estado MG + União | **Provável membro** (consórcio abrange região Nordeste/Jequitinhonha) | Não consta como dirigente | Marcelo Adriano Xavier de Vasconcelos | Teófilo Otoni/MG | CISNORJE site; Estado de Minas; Correio de Minas | **MÉDIO-ALTO** — calamidade financeira declarada em 06/01/2025 |
-| Consórcio Intermunicipal de Saúde Entre os Vales Mucuri e Jequitinhonha | **CIS-EVMJ** | 01.014.332/0001-98 | Saúde — média complexidade | Angelândia, Ataléia, Campanário, Caraí, Carlos Chagas, Catuji, Crisólita, Franciscópolis, Frei Gaspar, Fronteira dos Vales, Itaipé, Itambacuri, Ladainha, Machacalis, Malacacheta, Monte Formoso, Nanuque, Nova Módica | **Não consta como membro** | — | — | Teófilo Otoni/MG | CISEVMJ.com; Econodata | BAIXO para Jequitinhonha (não é membro) — mas a verificação documental se mantém |
-| Consórcio Intermunicipal de Saúde do Médio Jequitinhonha | **CISMEJE** | — | Saúde — média complexidade | Araçuaí, Berilo, Comercinho, Coronel Murta, Itinga, Itaobim, Francisco Badaró, Jenipapo de Minas, Medina, Virgem da Lapa | **Não consta como membro** | — | Sec. Exec.: Raul Rodrigues de Freitas | Araçuaí/MG | CISMEJE; Cosecs-MG | BAIXO para Jequitinhonha (não é membro) |
-| Consórcio Encostas CIM-Jequitinhonha | — | 55.035.108/0001-01 | A apurar | A apurar | A apurar | A apurar | A apurar | A apurar | Serasa Experian | A apurar |
-
----
-
-## 9. Análise específica: Prefeito Nilo e consórcios públicos
-
-| Quesito da matriz obrigatória | Resposta | Classificação |
-|---|---|---|
-| Nome completo do prefeito | **Nilo Barbuda Souto** | Fato comprovado |
-| Mandatos exercidos | 2021-2024 (eleito em 15/11/2020 com 49,02%); 2025-2028 (reeleito em 06/10/2024 com 59,87%, no 1º turno) | Fato comprovado |
-| Partido | PDT (nº 12); coligação 2024 "Com O Povo Para Fazer Mais" (PP, PODE, PSB, SOLIDARIEDADE, Federação Brasil da Esperança PT/PCdoB/PV, REPUBLICANOS, PDT) | Fato comprovado |
-| Vice-prefeito | Zé Rolinha (PT) | Indício forte — nome civil pendente |
-| Bens declarados na candidatura 2024 | R$ 2.699.185,51 | Fato comprovado |
-| De quais consórcios Jequitinhonha participa | CIMVAJER (confirmado), CIMBAJE (confirmado), CISNORJE (provável), CIM Jequitinhonha (verificar lista), Consórcio Encostas CIM-Jequitinhonha (verificar) | Misto |
-| Em quais consórcios Nilo exerce ou exerceu cargo | **Presidente da Diretoria Executiva do CIMVAJER, biênio 2025/2026** | Fato comprovado |
-| É presidente de mais de um consórcio? | **Não localizado em fonte pública** — informação inicial do usuário, pendente de checagem para o biênio atual em CIMBAJE, CIM Jequitinhonha, CISNORJE, CIS-EVMJ e demais | Informação inicial do usuário pendente de confirmação |
-| Desde quando preside o CIMVAJER | Biênio 2025/2026 (atos formais não recuperados em fonte aberta — necessária ata de eleição) | Indício forte |
-| Documento que comprova a presidência | Página oficial do CIMVAJER ("Diretoria Executiva 2025/2026") e registros indexados em buscadores; **a ata de eleição e o termo de posse devem ser obtidos** | Indício forte |
-| Poderes do presidente | Representação institucional, presidência da Assembleia, ordenação de despesa (a confirmar pelo estatuto), assinatura de contratos | Indício médio (depende do estatuto) |
-| O consórcio realiza licitações, dispensas, inexigibilidades, credenciamentos? | Sim, é regra geral aos consórcios públicos sob a Lei nº 14.133/2021 — relatórios próprios não recuperados | Indício forte |
-| Recebe repasses de Jequitinhonha/MG? | Sim (decorrência da Lei nº 11.107/2005 e do contrato de rateio) — valores específicos não recuperados | Indício forte |
-| Empresas / pessoas pagas pelo consórcio | Não recuperado | Não localizado |
-| Familiares de agentes públicos de Jequitinhonha contratados pelos consórcios | **Hipótese investigativa** (informação inicial do usuário aponta para a esposa do Secretário de Saúde) | Hipótese investigativa |
-| Sobreposição de fornecedores entre Prefeitura e consórcios | Não recuperado | Não localizado |
-| Transparência dos atos do consórcio | Existe portal próprio do CIMVAJER, mas a coleta automatizada foi bloqueada (HTTP 403) — exige acesso manual ou requisição via LAI | Indício médio |
-| Indícios de conflito de interesse | Há **acúmulo de poder decisório** (Prefeito + Presidente do CIMVAJER), o que por si só não configura ilícito, mas exige rigor quanto à impessoalidade nas decisões | Hipótese investigativa |
-| Indícios de desvio de finalidade | Não localizado em fonte pública | Não localizado |
-| Indícios de favorecimento | Não localizado em fonte pública | Não localizado |
-| Documentos faltantes | Estatuto do CIMVAJER; protocolo de intenções; contratos de rateio; contratos de programa; atas de assembleia (2021-2026); relação nominal de empregados/contratados/credenciados; relação de fornecedores; demonstrativos financeiros; folha de pagamento | — |
-
----
-
-## 10. Análise específica: Secretário de Saúde Henrique e possível vínculo da esposa com consórcio público
-
-| Quesito da matriz obrigatória | Resposta | Classificação |
-|---|---|---|
-| Nome completo | **Henrique Ramos de Sousa** | Fato comprovado |
-| Cargo formal | Secretário Municipal de Saúde de Jequitinhonha/MG | Fato comprovado |
-| Desde quando ocupa o cargo | Não recuperado em fonte aberta (ato de nomeação não localizado) | Indício médio |
-| Atribuições | Política municipal de saúde, gestão da rede SUS local, contratos da SMS, representação do município nos colegiados regionais de saúde e consórcios de saúde | Indício forte |
-| É ordenador de despesa? | Provável (é o padrão para secretários de pasta) — confirmar por decreto de delegação | Hipótese investigativa |
-| Assina documentos relacionados a consórcios? | Provável — confirmar por estatuto e atos internos | Hipótese investigativa |
-| Fiscaliza contratos, convênios, termos de rateio, serviços de saúde? | Provável — confirmar designação formal | Hipótese investigativa |
-| Nome completo da esposa | **Não localizado em fonte pública consultada** | Informação inicial do usuário pendente |
-| Consórcio em que ela trabalha/trabalhou | **Não localizado em fonte pública consultada** | Informação inicial do usuário pendente |
-| Vínculo dela com o consórcio | **Não localizado em fonte pública consultada** | Informação inicial do usuário pendente |
-| Função dela | **Não localizado em fonte pública consultada** | Informação inicial do usuário pendente |
-| Atua em Jequitinhonha/MG? | **Não localizado em fonte pública consultada** | Informação inicial do usuário pendente |
-| Recebe recursos derivados de repasses de Jequitinhonha ao consórcio? | **Não localizado em fonte pública consultada** | Informação inicial do usuário pendente |
-| Existe contrato/termo de rateio/convênio entre Jequitinhonha e o consórcio? | Indício forte de que sim, ao menos com CIMVAJER e CIMBAJE; quanto a consórcios de saúde específicos, exige checagem | Indício forte |
-| Quem é o fiscal formal? | Não recuperado | Não localizado |
-| Quem atesta prestação de serviços? | Não recuperado | Não localizado |
-| Quem autoriza pagamentos? | Não recuperado | Não localizado |
-| Quem homologa despesas? | Não recuperado | Não localizado |
-| Henrique tem poder decisório sobre o consórcio? | Provável, na qualidade de Secretário de Saúde do município consorciado | Hipótese investigativa |
-| Subordinação direta? | A determinar | Hipótese investigativa |
-| Subordinação indireta? | A determinar | Hipótese investigativa |
-| Benefício econômico familiar? | A determinar | Hipótese investigativa |
-| Declaração de impedimento/suspeição/conflito de interesse? | Não recuperada | Não localizada |
-| Manifestação da Procuradoria/Controladoria? | Não recuperada | Não localizada |
-| Risco de violação à impessoalidade/moralidade? | **Sim, em tese**, **se** confirmada a vinculação remunerada da esposa a consórcio fiscalizado/financiado pelo município | Hipótese investigativa |
-| Documentos faltantes para confirmar/descartar | (i) Identificação completa da esposa; (ii) contrato/edital/credenciamento do consórcio com ela; (iii) folha de pagamento do consórcio; (iv) ato de designação de fiscal/gestor; (v) declarações de bens e impedimento do Secretário; (vi) atos da Procuradoria; (vii) cruzamento CNES por consórcio | — |
-
-**Observação técnica:** A hipótese investigativa, **em tese**, poderia tangenciar:
-- Lei nº 8.429/1992 (LIA), art. 11, especialmente quanto à violação aos princípios da impessoalidade e moralidade (com a redação dada pela Lei nº 14.230/2021, que exige dolo específico e dano para improbidade);
-- Lei nº 12.813/2013 (Conflito de Interesses no Exercício de Cargo do Poder Executivo Federal) — não se aplica diretamente ao município, mas serve de **parâmetro interpretativo**;
-- Súmula Vinculante nº 13 do STF (nepotismo), com debate sobre nepotismo cruzado e via consórcio;
-- Lei Orgânica Municipal e Estatuto dos Servidores de Jequitinhonha (não recuperados).
-
----
-
-## 11. Mapa de vínculos
-
-| Pessoa A | Pessoa B / empresa / consórcio | Tipo de vínculo | Status do vínculo | Evidência | Fonte | Implicação possível | Grau de risco |
-|---|---|---|---|---|---|---|---|
-| Nilo Barbuda Souto | Ana Maria Ramos Moreira Souto | Conjugal | **Confirmado** | Reportagens e foto institucional; sobrenome comum "Souto"; identificação como primeira-dama | Gustavo Santana; O Tempo; Facebook institucional | Cônjuge ocupa cargo de Secretária (cargo político) | Médio |
-| Nilo Barbuda Souto | Fernando Souto Moreira (falecido) | Filiação | **Confirmado** | Reportagens nacionais sobre acidente aéreo | O Tempo; CNN Brasil; Por Dentro de Minas | Filho administrava grupo familiar de empresas | Médio |
-| Nilo Barbuda Souto | Filha (Austrália) | Filiação | Indício forte | Reportagem O Tempo | O Tempo | — | Baixo |
-| Nilo Barbuda Souto | Agro-Souto Comércio e Pecuária Ltda | Familiar / econômico | Indício forte | Reportagens descrevem grupo familiar; CNPJ na cidade; setor veterinário (compartilhado com a profissão do prefeito e do filho) | Reportagens; CNPJ.biz; Solutudo | Risco de contratação do município com a empresa familiar (a investigar) | **Alto** |
-| Nilo Barbuda Souto | CIMVAJER | Funcional — presidente | **Confirmado** | Página da Diretoria Executiva 2025/2026 | CIMVAJER (via Cosecs-MG e indexação) | Acúmulo de poder político-decisório | **Alto** |
-| Nilo Barbuda Souto | Zé Rolinha | Político-eleitoral | Confirmado (mesma chapa) | Perfil eleitoral 2024 | O Tempo | Aliança formal | Baixo |
-| Nilo Barbuda Souto | Roberto Botelho | Adversário eleitoral recorrente | Confirmado | Resultados eleitorais 2020 e 2024 | Aconteceu no Vale; CNN Brasil | — | Médio (verificar pendências judiciais/eleitorais cruzadas) |
-| Ana Maria Ramos Moreira Souto | Julimara Ramos Brito | Patronímico "Ramos" coincidente | **Hipótese investigativa** | Mesmo sobrenome | Site oficial da Prefeitura | Potencial parentesco a confirmar | Médio |
-| Ana Maria Ramos Moreira Souto | Henrique Ramos de Sousa | Patronímico "Ramos" coincidente | **Hipótese investigativa** | Mesmo sobrenome | Site oficial da Prefeitura | Potencial parentesco a confirmar | Médio |
-| Ana Maria Ramos Moreira Souto | Danniel Ramos Oliveira | Patronímico "Ramos" coincidente | **Hipótese investigativa** | Mesmo sobrenome — Danniel é enfermeiro da Prefeitura | ZoomInfo; site da Prefeitura | Potencial parentesco a confirmar | Baixo |
-| Ana Maria Ramos Moreira Souto | Marco Antonio Moreira (alegado cônjuge de Julimara) | Patronímico "Moreira" coincidente | **Hipótese investigativa** | Sobrenomes coincidentes; vínculo alegado pelo usuário | Informação inicial do usuário | Potencial parentesco a confirmar | Médio |
-| Julimara Ramos Brito | Marco Antonio Moreira | Conjugal | **Informação inicial do usuário pendente de confirmação** | — | Informação do usuário | Se confirmado: cruzar com possíveis cargos públicos de Marco Antonio | A determinar |
-| Henrique Ramos de Sousa | Esposa não nomeada | Conjugal | **Informação inicial do usuário pendente de confirmação** | — | Informação do usuário | Hipótese central de conflito de interesse | **Alto** (se confirmado) |
-| Esposa de Henrique | Consórcio público (não identificado) | Contratual/empregatício | **Informação inicial do usuário pendente de confirmação** | — | Informação do usuário | Hipótese central de conflito de interesse | **Alto** (se confirmado) |
-| Laura Botelho Antunes (alegada) | Familiares na Prefeitura | Familiar | **Informação inicial do usuário pendente de confirmação** | — | Informação do usuário | Hipótese de nepotismo / concentração familiar | A determinar |
-| Laura Botelho Antunes (alegada) | Roberto Botelho (adversário derrotado) | Sobrenome "Botelho" coincidente | **Hipótese investigativa** | Sobrenome comum | Reportagens | Se confirmado, situação política curiosa (oposição na máquina) | Médio |
-| Nilo Barbuda Souto | Márcio Ferreira Souto (Pref. Pedra Azul / Pres. CIMBAJE) | Sobrenome "Souto" coincidente | **Hipótese investigativa** | Sobrenome comum entre dois prefeitos consorciados, ambos presidentes de consórcios da região | Cosecs-MG; perfil eleitoral 2024 | Se houver parentesco, exigirá registro nas decisões de consórcios sobrepostos | Médio |
-
----
-
-## 12. Linha do tempo dos fatos
-
-| Data | Evento | Pessoa(s) | Empresa / consórcio | Documento | Fonte | Relevância |
+| Nome | Cargo / função | Vínculo familiar / político | Setor | Período | Fonte | Classificação |
 |---|---|---|---|---|---|---|
-| 23/11/1987 | Constituição da Agro-Souto Comércio e Pecuária Ltda em Jequitinhonha | Família Souto | Agro-Souto (CNPJ 23.823.057/0001-96) | Inscrição cadastral RFB | CNPJ.biz | Origem do grupo familiar |
-| 08/07/2015 | Constituição do CIM Jequitinhonha | — | CIM Jequitinhonha (CNPJ 22.835.076/0001-70) | Inscrição RFB | CNPJ.biz | Contexto regional |
-| 07/07/2017 | Fundação do CIMVAJER | Prefeitos da região | CIMVAJER (CNPJ 28.168.515/0001-14) | Inscrição RFB; estatuto não recuperado | Serasa Experian | Origem do consórcio presidido por Nilo |
-| 15/11/2020 | Nilo Souto eleito prefeito de Jequitinhonha (1ª vez confirmada) com 49,02% | Nilo Souto vs. Roberto Botelho, Decanor, Marcelo Di Martins | — | Diploma eleitoral; ata de apuração | Aconteceu no Vale | Início do mandato 2021-2024 |
-| 06/10/2024 | Nilo Souto reeleito com 59,87% | Nilo Souto vs. Roberto Botelho | — | Diploma eleitoral | CNN Brasil; O Tempo | Início do mandato 2025-2028 |
-| 01/01/2025 | Posse do mandato 2025-2028 | Nilo, vice Zé Rolinha, novos secretários | — | Termo de posse; nomeações | DOMM (não recuperado) | Estruturação do governo |
-| 06/01/2025 | CISNORJE decreta estado de calamidade financeira | Marcelo Adriano Xavier de Vasconcelos (presidente) | CISNORJE | Decreto 001/2025 | Diário Tribuna; Estado de Minas; Correio de Minas | Impacto direto sobre SAMU regional |
-| 2025-2026 | Posse e atuação da Diretoria Executiva CIMVAJER 2025/2026 | Nilo Barbuda Souto (presidente); Ideuvan Avelar (VP); Adimildon Antunes de Almenara; Irone Bento Dias de Oliveira; Cândido Ferraz Alves | CIMVAJER | Ata de eleição; termo de posse (não recuperados) | Site CIMVAJER (via Cosecs-MG) | **Confirma presidência de Nilo Souto** |
-| 2025 | Posse e atuação da Diretoria CIMBAJE 2025/2026 | Márcio Ferreira Souto (Pref. Pedra Azul) | CIMBAJE | Ata de eleição | Cosecs-MG | Jequitinhonha é membro |
-| 04/05/2026 | Morte de Fernando Souto Moreira em queda de avião em BH | Fernando Souto Moreira | Agro-Souto e empresa de sal mineral | Decreto de luto oficial | O Tempo; CNN Brasil; Por Dentro de Minas; Correio Braziliense | Sucessão e reorganização do grupo familiar |
+| **Nilo Barbuda Souto** | Prefeito Municipal (PDT) | — | Gabinete | Vice-Prefeito 2005-2008 (eleito 2004); Prefeito 2021-2024 (eleito 2020); Prefeito 2025-2028 (reeleito 2024) | TSE; CNN; O Tempo; Tribuna PR; ReceitaFederal (CNPJ eleitoral 06.420.229/0001-61) | **Fato comprovado** |
+| **Ana Maria Ramos Moreira Souto** | Secretária Municipal de Desenvolvimento Social + Sócia da Agro-Souto Comércio e Pecuária Ltda | Esposa do Prefeito Nilo Souto (primeira-dama) | Desenvolvimento Social + setor privado (veterinário) | Mandato 2025-2028 (cargo); sócia da empresa desde 21/06/1989 | Prefeitura; Receita Federal (CNPJ 23.823.057/0001-96); Facebook institucional; Gustavo Santana | **Fato comprovado** |
+| **Fernando Moreira Souto** (também grafado "Fernando Souto Moreira" em reportagens) | Empresário, médico veterinário | Filho do prefeito | Setor privado — Agro-Souto Nutrição Animal Ltda | Falecido em 04/05/2026 | Receita Federal (CNPJ 21.720.852/0001-23); O Tempo; CNN; Por Dentro de Minas; Folha; Itatiaia | **Fato comprovado** |
+| **Gabriella de Moreira Souto** | Sócia da Agro-Souto Nutrição Animal Ltda | Filha do prefeito Nilo Souto; reside na Austrália | Setor privado | Sócia desde 21/01/2015 | Receita Federal (CNPJ 21.720.852/0001-23); O Tempo | **Fato comprovado** |
+| **Isabella de Paula** | Médica veterinária | Nora do prefeito (esposa de Fernando); mãe de dois netos do prefeito | Setor privado | — | O Tempo (reportagem do velório) | **Indício forte** |
+| **Francisco Cordeiro dos Santos** | Administrador / representante legal | Procurador/administrador em pelo menos duas empresas locais (Agro-Souto Comércio e Heferauto Ltda) | — | Funções formais nos respectivos atos societários | Receita Federal (CNPJs 23.823.057/0001-96 e 21.528.047/0001-00) | **Fato comprovado quanto à função; vínculo a investigar** |
+| **Julimara Ramos Brito** | Secretária Municipal de Administração e Finanças | Cônjuge alegado: Marco Antonio Moreira (informação do usuário, **não confirmada** em fontes públicas consultadas) | Administração e Finanças | Mandato 2025-2028 | Prefeitura | **Fato comprovado** (cargo); **Pendente** (cônjuge) |
+| **Marco Antonio Moreira** | — | Suposto cônjuge da Sec. Julimara Ramos Brito | — | — | Informação do usuário | **Não localizado** |
+| **Henrique Ramos de Sousa** | Secretário Municipal de Saúde | Esposa (não nomeada) supostamente vinculada a consórcio público (informação do usuário) | Saúde | Mandato 2025-2028 | Prefeitura | **Fato comprovado** (cargo); **Pendente** (esposa) |
+| **Esposa do Sec. Henrique** | Suposta empregada / contratada / credenciada de consórcio público de saúde | Cônjuge do Secretário de Saúde | A apurar (hipótese: CIMVAJER, CIMBAJE ou CISNORJE) | — | Informação do usuário; CIMVAJER tem CNAE de saúde | **Pendente — alta prioridade** |
+| **Laura Botelho Antunes** | Suposta secretária / coordenadora não identificada | Familiares na prefeitura (irmão, marido — informação do usuário) | A apurar | — | Informação do usuário; **não consta na lista oficial de secretarias indexada** | **Pendente** |
+| **José Augusto Alves Mendes** | Secretário Municipal de Obras, Viação e Serviços Urbanos | — | Obras | Mandato 2025-2028 | Prefeitura | **Fato comprovado** |
+| **Angela Francisca de Souza Trindade** | Secretária Municipal de Educação, Cultura, Esportes, Lazer e Turismo | — | Educação | Mandato 2025-2028 | Prefeitura | **Fato comprovado** |
+| **Sergio de Pinho Guimarães** | Secretário Municipal de Desenvolvimento Econômico Sustentável / Agricultura | — | Desenv. Econômico | Mandato 2025-2028 | Prefeitura | **Fato comprovado** |
+| **Zé Rolinha** (nome civil pendente) | Vice-Prefeito (PT) | Aliado político | Gabinete do Vice | 2025-2028 | O Tempo | **Indício forte** |
+| **Roberto Alcântara Botelho** ("Roberto Botelho") | Cirurgião-dentista (UFMG); ex-Prefeito de Jequitinhonha por 3 mandatos; ex-Vice; ex-Secretário Municipal de Saúde; candidato derrotado em 2020 e 2024 (PSDB) | Esposo de Sônia Madi (sócia da Angelus) | Oposição | Candidato 2004, 2020 e 2024; cargos prévios | Receita Federal (CNPJ 06.680.503/0001-31); reportagens; econodata | **Fato comprovado** |
+| **Leonardo Botelho Soares Pereira** | Sócio da Heferauto Ltda (sobrenome Botelho) | Possível ramo familiar da família Botelho local | Setor privado | Sócio desde 03/09/1991 | Receita Federal (CNPJ 21.528.047/0001-00) | **Fato comprovado quanto ao cadastro; vínculo familiar a confirmar** |
+| **Danniel Ramos Oliveira** | Enfermeiro profissional da Prefeitura | Sobrenome Ramos | Saúde / efetivo | Período não recuperado | ZoomInfo (perfil profissional) | **Indício médio** |
+| **Marcelo Gil** | Vereador eleito 2024 (PODE) | Servidor municipal | Câmara Municipal | 2025-2028 | O Tempo (perfil eleitoral) | **Fato comprovado** |
+| **Decanor** (PT, 13456) | Candidato a Vereador 2024 (ex-candidato a prefeito 2020); engenheiro agrônomo/agrimensor | — | — | — | O Tempo | **Indício forte** |
+| **Marcelo Di Martins** | Candidato a Prefeito 2020 (Avante; 0,33%) | — | — | — | Aconteceu no Vale | **Indício médio** |
 
 ---
 
-## 13. Achados investigativos
+## 4. Grupo econômico Souto — quadro societário consolidado
 
-### Achado nº 1 — Cônjuge do prefeito ocupa cargo de Secretária Municipal
+### 4.1. AGRO-SOUTO COMÉRCIO E PECUÁRIA LTDA
 
-- **Classificação:** Fato comprovado (cargo); Análise jurídica em hipótese investigativa.
-- **Grau de risco:** Médio.
-- **Pessoas envolvidas:** Nilo Barbuda Souto (prefeito); Ana Maria Ramos Moreira Souto (cônjuge e Secretária Municipal de Desenvolvimento Social).
-- **Empresas envolvidas:** —
-- **Consórcios envolvidos:** —
-- **Fato identificado:** A página oficial de secretarias da Prefeitura indica que a Secretaria de Desenvolvimento Social é ocupada pela Sra. Ana Maria Ramos Moreira Souto. Reportagens e referências institucionais identificam-na como cônjuge do prefeito Nilo Souto e como primeira-dama.
-- **Evidências localizadas:** Site oficial da Prefeitura; reportagem de O Tempo sobre o falecimento do filho; foto institucional em página de Gustavo Santana; página do Facebook da Secretaria de Desenvolvimento Social.
-- **Fontes:** Vide Seção 19.
-- **Possível irregularidade:** Discussão sobre limites da vedação ao nepotismo em **cargo de natureza política**. O entendimento dominante do STF (ADC 12, Reclamações reiteradas) **exclui** secretários municipais da vedação da Súmula Vinculante nº 13, **salvo** comprovado desvio de finalidade ou ausência de aptidão técnica. A análise concreta exige verificar (i) aptidão técnica; (ii) lei municipal mais restritiva, se houver; (iii) eventuais decisões com benefício direto ao núcleo familiar.
-- **Norma potencialmente aplicável:** CF/88, arts. 5º, caput, 37, caput (impessoalidade, moralidade); Súmula Vinculante nº 13 (nepotismo) e respectiva jurisprudência; Lei Orgânica Municipal de Jequitinhonha (não recuperada).
-- **Elementos que fortalecem a hipótese:** existência de outras coincidências patronímicas (vide Achado nº 2).
-- **Elementos que enfraquecem a hipótese:** entendimento consolidado de que secretarias são cargos políticos; ausência, no momento, de prova de aptidão deficiente ou desvio de finalidade.
-- **Documentos faltantes:** Ato de nomeação; histórico funcional; eventual ação direta de inconstitucionalidade ou MP em curso; pareceres da Procuradoria municipal sobre o tema.
-- **Diligências recomendadas:** LAI; verificar parecer da Procuradoria-Geral do Município; consultar Câmara Municipal sobre eventuais requerimentos sobre o tema.
-- **Órgão competente para apuração:** Ministério Público de Minas Gerais (Promotoria de Justiça da Comarca de Jequitinhonha); Câmara Municipal (controle político); TCE-MG (legalidade da despesa).
+| Campo | Conteúdo |
+|---|---|
+| Razão social | AGRO-SOUTO COMERCIO E PECUARIA LTDA |
+| CNPJ | 23.823.057/0001-96 |
+| Início de atividade | 23/11/1987 |
+| Situação cadastral | ATIVA (data da situação: 03/11/2005) |
+| Porte | Micro Empresa |
+| Natureza jurídica | Sociedade Empresária Limitada (206-2) |
+| Endereço | Av. Pedro Ferreira, 21, Centro, Jequitinhonha/MG, CEP 39.960-000 |
+| CNAE principal | 4771-7/04 — Comércio varejista de medicamentos veterinários |
+| CNAEs secundários | 4729-6/99 (produtos alimentícios); **4744-0/01 (ferragens e ferramentas); 4744-0/99 (materiais de construção); 4755-5/02 (armarinho); 4763-6/01 (brinquedos); 4772-5/00 (cosméticos); 4781-4/00 (vestuário); 4789-0/02 (plantas e flores); 4789-0/04 (animais vivos e produtos para pets); 4789-0/09 (armas e munições)** |
+| Capital social | R$ 0,00 (registro não atualizado na base — provavelmente integralizado nominal) |
+| Optante Simples Nacional | Sim, desde 01/07/2007 |
+| Sócio-administrador | **NILO BARBUDA SOUTO** — CPF mascarado ***398356**, faixa etária 71-80 anos, sócio desde 04/01/1995, qualificação 49 (sócio-administrador) |
+| Sócia | **ANA MARIA RAMOS MOREIRA SOUTO** — CPF mascarado ***227866**, faixa etária 61-70 anos, sócia desde 21/06/1989, qualificação 22 (sócio) — **representada por FRANCISCO CORDEIRO DOS SANTOS** (CPF mascarado ***880776**), qualificação 5 (administrador) |
+| Fonte primária | API BrasilAPI/Receita Federal — consulta direta em 27/05/2026 |
 
-### Achado nº 2 — Patronímico "Ramos" em três secretarias do primeiro escalão
+**Observações críticas:**
+- O CNAE secundário **"4789-0/09 — Comércio varejista de armas e munições"** é categoria sensível e exige licenças específicas (Polícia Federal/Exército) — sua presença no registro deve ser verificada quanto à efetividade do exercício e atualização documental.
+- O endereço da empresa (Av. Pedro Ferreira, 21) está na **mesma via** da sede do Município de Jequitinhonha (Av. Pedro Ferreira, 159).
+- A presença de **CNAEs secundários para materiais de construção, ferragens e ferramentas** abre potencial conflito caso a empresa atue como fornecedora da Prefeitura nessas categorias.
 
-- **Classificação:** Indício médio (coincidência patronímica em município pequeno é relevante mas não conclusiva).
-- **Grau de risco:** Médio.
-- **Pessoas envolvidas:** Ana Maria **Ramos** Moreira Souto; Julimara **Ramos** Brito; Henrique **Ramos** de Sousa; Danniel **Ramos** Oliveira (enfermeiro).
-- **Fato identificado:** Quatro pessoas com o patronímico "Ramos" estão identificadas em posições da administração municipal, sendo três titulares de secretarias.
-- **Evidências localizadas:** Página de secretarias da Prefeitura; perfil profissional indexado de Danniel Ramos Oliveira.
-- **Possível irregularidade:** Possível nepotismo, **se** comprovado parentesco até 3º grau e **se** a indicação foi conduzida por agente com poder de influência.
-- **Norma potencialmente aplicável:** Súmula Vinculante nº 13/STF (para servidores não-políticos); Lei Orgânica Municipal; Estatuto dos Servidores Municipais.
-- **Elementos que fortalecem a hipótese:** município pequeno; coincidência tripla em primeiro escalão.
-- **Elementos que enfraquecem a hipótese:** "Ramos" é sobrenome comum em todo o Brasil; sem prova documental, é mera homonímia.
-- **Documentos faltantes:** Certidões de nascimento e casamento; declarações de inexistência de nepotismo; árvore genealógica.
-- **Diligências recomendadas:** LAI à Prefeitura solicitando declaração formal de inexistência de parentesco entre os secretários; consulta a registros civis públicos de Jequitinhonha; entrevista jornalística responsável.
-- **Órgão competente para apuração:** Ministério Público (MPMG); TCE-MG.
+### 4.2. AGRO-SOUTO NUTRIÇÃO ANIMAL INDÚSTRIA E COMÉRCIO LTDA
 
-### Achado nº 3 — Prefeito acumula a Presidência do CIMVAJER
+| Campo | Conteúdo |
+|---|---|
+| Razão social | AGRO-SOUTO NUTRICAO ANIMAL INDUSTRIA E COMERCIO LTDA |
+| Nome fantasia | AGRO-SOUTO NUTRICAO ANIMAL LTDA |
+| CNPJ | 21.720.852/0001-23 |
+| Início de atividade | 21/01/2015 |
+| Situação cadastral | ATIVA |
+| Porte | Micro Empresa |
+| Natureza jurídica | Sociedade Empresária Limitada (206-2) |
+| Endereço | Av. Rodoviária, 390, Vaticano, Jequitinhonha/MG, CEP 39.960-000 |
+| Telefone | (33) 3741-1026 |
+| Contador (e-mail) | patecocontabilidade@hotmail.com (Pateco Contabilidade) |
+| CNAE principal | 1066-0/00 — Fabricação de alimentos para animais (sal mineral, ração) |
+| CNAE secundário | 4623-1/09 — Comércio atacadista de alimentos para animais |
+| Capital social | R$ 20.000,00 |
+| Optante Simples Nacional | Sim, desde 21/01/2015 |
+| Sócio-administrador | **FERNANDO MOREIRA SOUTO** — CPF mascarado ***339646**, faixa etária 31-40 anos (à data do registro), sócio desde 21/01/2015 (FALECIDO em 04/05/2026) |
+| Sócia | **GABRIELLA DE MOREIRA SOUTO** — CPF mascarado ***206416**, faixa etária 31-40 anos, sócia desde 21/01/2015 — reportada como residente na Austrália |
+| Bairro de localização | **VATICANO** — mesmo bairro da Secretaria Municipal de Desenvolvimento Social (Rua Maria Amelia, 11, Vaticano) e da Secretaria de Obras (Av. Passos, 157, Vaticano). |
+| Fonte primária | API BrasilAPI/Receita Federal — consulta direta em 27/05/2026 |
 
-- **Classificação:** Fato comprovado (presidência); Hipótese investigativa (riscos derivados).
-- **Grau de risco:** Alto.
-- **Pessoas envolvidas:** Nilo Barbuda Souto.
-- **Consórcios envolvidos:** CIMVAJER (presidente); CIMBAJE (município é membro); CISNORJE (provável); CIM Jequitinhonha (a verificar).
-- **Fato identificado:** A página da Diretoria Executiva 2025/2026 do CIMVAJER, indexada em fontes públicas (Cosecs-MG), aponta Nilo Barbuda Souto, prefeito de Jequitinhonha, como **Presidente**. A diretoria conta ainda com Ideuvan de Souza Avelar (vice, prefeito de Felisburgo), Adimildon Antunes de Almenara (diretor financeiro, prefeito de Rio do Prado), Irone Bento Dias de Oliveira (diretora de patrimônio, prefeita de Mata Verde) e Cândido Ferraz Alves (secretário do conselho, prefeito de Ponto dos Volantes).
-- **Possível irregularidade:** Acúmulo de poder decisório **não é, por si só, ilícito**, pois é da natureza dos consórcios públicos que prefeitos componham a diretoria. Contudo, esse acúmulo exige rigor adicional na impessoalidade, especialmente quanto a (i) contratações que beneficiem direta ou indiretamente Jequitinhonha; (ii) homologações em pregões e dispensas com fornecedores também atuantes no município; (iii) credenciamentos de profissionais com vínculos familiares ou políticos com a administração de Jequitinhonha.
-- **Norma potencialmente aplicável:** Lei nº 11.107/2005 (Consórcios Públicos); Decreto nº 6.017/2007; Lei nº 14.133/2021; Súmula Vinculante nº 13; LIA (Lei nº 8.429/1992) — se comprovado dolo específico.
-- **Elementos que fortalecem a hipótese:** presidência confirmada; abrangência multifinalitária amplifica risco.
-- **Elementos que enfraquecem a hipótese:** rotinas de governança de consórcios geralmente preveem deliberação colegiada.
-- **Documentos faltantes:** Estatuto; regimento interno; contrato de programa com Jequitinhonha; contrato de rateio; relação de empregados; relação de contratados; relação de credenciados; demonstrativos de despesa.
-- **Diligências recomendadas:** LAI ao CIMVAJER; consulta ao PNCP; auditoria de procedimentos licitatórios; cruzamento de fornecedores com a Prefeitura.
-- **Órgão competente para apuração:** TCE-MG (jurisdição sobre consórcios públicos cujos membros sejam mineiros); MPMG.
+### 4.3. AGROSOUTO FERT SAL (marca/estabelecimento adicional)
 
-### Achado nº 4 — Empresa familiar do prefeito atua no município (Agro-Souto)
+| Campo | Conteúdo |
+|---|---|
+| Nome comercial conhecido | Agrosouto Fert Sal |
+| Endereço | Rua Bento V, 540, Centro, Jequitinhonha/MG |
+| Telefone reportado | (33) 3741-1503 |
+| Atividade declarada nos guias comerciais | Agricultura e pecuária — comércio, serviços e produtos |
+| CNPJ específico | **Não recuperado** nesta versão — pode tratar-se de filial, nome fantasia ou estabelecimento de um dos CNPJs anteriores |
+| Classificação | **Indício forte** de pertencer ao grupo familiar Souto |
 
-- **Classificação:** Fato comprovado (existência); Hipótese investigativa (eventual contratação pública).
-- **Grau de risco:** Alto.
-- **Pessoas envolvidas:** Nilo Barbuda Souto; Fernando Souto Moreira (falecido); demais membros do grupo familiar.
-- **Empresas envolvidas:** Agro-Souto Comércio e Pecuária Ltda (CNPJ 23.823.057/0001-96).
-- **Fato identificado:** A empresa, ramo veterinário, sedia-se no Centro de Jequitinhonha, fora desde 1987 e era administrada pelo filho do prefeito. O prefeito é veterinário. Reportagens descrevem a existência de fazendas e empresa de sal mineral do grupo familiar.
-- **Possível irregularidade:** Eventual contratação pública direta ou indireta com a empresa familiar do prefeito violaria a Lei nº 14.133/2021 (art. 14, II — impedimentos por parentesco), além de configurar potencial ato de improbidade administrativa e crime contra a Administração Pública.
-- **Norma potencialmente aplicável:** Lei nº 14.133/2021, art. 14; Lei nº 8.429/1992; Código Penal, arts. 89-99 (Lei nº 14.133/2021); CF/88, art. 37.
-- **Elementos que fortalecem a hipótese:** município pequeno; setor de atuação compatível com necessidades públicas (medicamentos veterinários para Secretaria de Agricultura ou para programas zoossanitários municipais).
-- **Elementos que enfraquecem a hipótese:** nenhum contrato direto foi localizado em fonte aberta neste levantamento; pode não haver qualquer contratação.
-- **Documentos faltantes:** Relação de contratos da Prefeitura e dos consórcios com empresas do ramo veterinário/agropecuário; quadro societário atualizado da Agro-Souto e demais empresas do grupo; eventuais contratos de programa de assistência técnica rural.
-- **Diligências recomendadas:** Consulta ao PNCP por CNPJ; LAI à Prefeitura, consórcios (CIMVAJER, CIMBAJE) e CIM Jequitinhonha; consulta à JUCEMG para identificar empresas no quadro societário do prefeito, do filho falecido e da esposa.
-- **Órgão competente para apuração:** TCE-MG; MPMG; Receita Federal (se houver indício fiscal).
+### 4.4. ELEIÇÕES 2004 — NILO BARBUDA SOUTO — VICE-PREFEITO
 
-### Achado nº 5 — Possível vínculo da esposa do Secretário de Saúde com consórcio público (Hipótese central do usuário)
-
-- **Classificação:** **Informação inicial fornecida pelo usuário, pendente de confirmação documental.**
-- **Grau de risco:** Alto, se confirmada.
-- **Pessoas envolvidas:** Henrique Ramos de Sousa (Secretário Municipal de Saúde); esposa não nomeada.
-- **Consórcios envolvidos:** Não identificado.
-- **Fato identificado:** Não localizado em fonte pública.
-- **Evidências localizadas:** Apenas a informação inicial do usuário.
-- **Possível irregularidade:** Caso confirmado, conflito de interesse, possível violação à impessoalidade e moralidade, possível nepotismo "via consórcio" (que não tem aparado claro na Súmula Vinculante nº 13, mas é tratado pela jurisprudência como burla a contratar familiares por interposta pessoa jurídica), possível ato de improbidade administrativa.
-- **Norma potencialmente aplicável:** CF/88, art. 37; Súmula Vinculante nº 13; Lei nº 11.107/2005; Lei nº 12.813/2013 (como parâmetro interpretativo); Lei nº 8.429/1992 (art. 11, com novas exigências da Lei nº 14.230/2021); Código de Ética do Servidor Municipal (se houver).
-- **Elementos que fortalecem a hipótese:** Existe vinculação institucional natural entre Secretário Municipal de Saúde e consórcios de saúde da região.
-- **Elementos que enfraquecem a hipótese:** Não há, ainda, identificação da esposa nem do consórcio.
-- **Documentos faltantes:** Identificação completa da esposa; eventual contrato/credenciamento/edital com o consórcio; folha do consórcio; ato de fiscal do contrato Prefeitura-Consórcio; declaração de impedimento do Secretário.
-- **Diligências recomendadas:** LAI à Prefeitura solicitando: (i) declaração formal de inexistência de conflito de interesse do Secretário de Saúde; (ii) lista dos profissionais disponibilizados ao município por consórcios de saúde; (iii) extrato dos repasses ao CISNORJE, CIMVAJER (se aplicável à saúde), e demais. LAI aos consórcios solicitando: lista de empregados, contratados e credenciados; cruzamento por sobrenome "Ramos" e "Sousa/Souza".
-- **Órgão competente para apuração:** MPMG; TCE-MG; Conselho Municipal de Saúde de Jequitinhonha.
-
-### Achado nº 6 — Possível secretária "Laura Botelho Antunes" e família na prefeitura (Hipótese central do usuário)
-
-- **Classificação:** **Informação inicial fornecida pelo usuário, pendente de confirmação documental.**
-- **Grau de risco:** A determinar.
-- **Pessoas envolvidas:** Laura Botelho Antunes (alegada); familiares (irmão, marido, demais).
-- **Fato identificado:** Não localizado em fonte pública. **A lista oficial atual de secretários da Prefeitura, indexada em buscadores, não contém esse nome.** Pode ser (a) cargo de coordenação/subsecretaria/assessoria não listado na página de secretarias; (b) nome diverso em fontes oficiais; (c) ainda não tomou posse; (d) alteração recente sem indexação.
-- **Evidências localizadas:** Apenas a informação inicial do usuário.
-- **Possível irregularidade:** Caso confirmado o perfil descrito (familiares múltiplos em cargos), exigirá análise de nepotismo, nepotismo cruzado e concentração familiar.
-- **Norma potencialmente aplicável:** Súmula Vinculante nº 13; CF/88, art. 37; LIA; Lei Orgânica Municipal.
-- **Documentos faltantes:** Confirmação do cargo; nomes dos familiares; atos de nomeação.
-- **Diligências recomendadas:** LAI à Prefeitura solicitando relação nominal completa de servidores efetivos, comissionados, temporários e contratados, com cargo, secretaria de lotação e ato de nomeação; consulta à página de organograma; entrevista responsável com vereadores e jornalistas locais.
-- **Órgão competente para apuração:** MPMG; TCE-MG.
-
-### Achado nº 7 — Possível conjugalidade entre Sec. Julimara Ramos Brito e Marco Antonio Moreira (Hipótese central do usuário)
-
-- **Classificação:** **Informação inicial fornecida pelo usuário, pendente de confirmação documental.**
-- **Grau de risco:** Médio, se confirmado.
-- **Pessoas envolvidas:** Julimara Ramos Brito; Marco Antonio Moreira.
-- **Fato identificado:** Não localizado em fonte pública. Sobrenome "Moreira" coincide com Ana Maria Ramos **Moreira** Souto (esposa do prefeito) e com Fernando Souto **Moreira** (filho), o que abre **hipótese de parentesco extenso**.
-- **Possível irregularidade:** Se Marco Antonio Moreira ocupar cargo público em Jequitinhonha ou em consórcio com participação do município, e houver parentesco com agentes políticos, podem incidir as vedações de nepotismo.
-- **Norma potencialmente aplicável:** Súmula Vinculante nº 13; LIA; Lei nº 14.133/2021 (impedimentos).
-- **Documentos faltantes:** Certidão de casamento ou declaração de união estável; histórico funcional de Marco Antonio Moreira em Jequitinhonha e na região; cruzamento de CPF/CNPJ.
-- **Diligências recomendadas:** LAI; consulta TSE para histórico eleitoral; consulta a registros civis públicos; verificação na JUCEMG.
-- **Órgão competente para apuração:** MPMG; TCE-MG.
-
-### Achado nº 8 — Calamidade financeira do CISNORJE e impacto sobre o SAMU regional
-
-- **Classificação:** Fato comprovado (calamidade); contexto investigativo.
-- **Grau de risco:** Médio-alto (saúde pública).
-- **Pessoas envolvidas:** Marcelo Adriano Xavier de Vasconcelos (presidente do CISNORJE); prefeitos da macrorregião; secretários municipais de saúde.
-- **Consórcios envolvidos:** CISNORJE.
-- **Fato identificado:** Decreto nº 001/2025, de 06/01/2025, declara calamidade financeira; dívida estimada em R$ 14 milhões e rombo regional reportado de R$ 56,8 milhões; risco de interrupção do SAMU em 86 municípios e 22 bases.
-- **Diligências recomendadas:** Verificar adimplência de Jequitinhonha/MG com o CISNORJE; obter atas de assembleia; verificar voto do representante de Jequitinhonha nas deliberações; verificar se a SMS de Jequitinhonha possui pessoal próprio do SAMU ou se depende exclusivamente do CISNORJE.
-- **Órgão competente para apuração:** TCE-MG; MPMG (defesa da saúde pública); Conselho Estadual de Saúde de Minas Gerais.
+| Campo | Conteúdo |
+|---|---|
+| Razão social | ELEICOES 2004 - NILO BARBUDA SOUTO - VICE PREFEITO |
+| CNPJ eleitoral | 06.420.229/0001-61 |
+| Natureza jurídica | Candidato a Cargo Político Eletivo (4090) |
+| Início | 14/07/2004 |
+| Situação | BAIXADA em 31/12/2004 (extinção voluntária) |
+| Endereço | Praça Rui Barbosa, 30, Centro, Jequitinhonha (Caixa Postal 10) |
+| Significado | **Comprova candidatura a Vice-Prefeito em 2004** — histórico político mais longo do que aparente |
+| Fonte primária | Receita Federal |
 
 ---
 
-## 14. Enquadramento jurídico preliminar
+## 5. Adversário recorrente e família Botelho
 
-| Fato ou conduta (em hipótese) | Impessoalidade | Moralidade | Nepotismo (SV13) | Conflito de interesse | Infração licitatória (Lei nº 14.133/2021) | Irregularidade em consórcio (Lei nº 11.107/2005) | Improbidade (Lei nº 8.429/1992 com alterações da Lei nº 14.230/2021) | Crime contra a Adm. Pública (CP e Lei nº 14.133/2021) | Norma de referência | Observação |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Cônjuge ocupando Secretaria Municipal | A analisar | A analisar | **Discutível — cargo político em geral excluído pela jurisprudência STF** | Possível (em decisões específicas) | — | — | Exige dolo específico e dano | Improvável sem outras condutas | CF/88; SV 13; ADC 12; Rcl reiteradas | Risco moderado por si só, alto se houver desvio |
-| Acúmulo Prefeito + Presidente de consórcio | A analisar caso a caso | A analisar caso a caso | Não se aplica diretamente | Possível em decisões específicas | — | Exige rigor adicional de governança | Improvável sem ato específico | Improvável sem ato específico | Lei nº 11.107/2005; Decreto nº 6.017/2007 | Pessoal e impessoalidade no caso concreto |
-| Contratação de empresa de cônjuge/filho do prefeito | Violação direta | Violação direta | **Sim** (interpretação ampliativa) | Violação direta | **Art. 14, II** (impedimento) — nulidade | Mesma vedação se houver | Art. 11 / art. 10 (se houver dano) | Art. 337-F do CP (frustrar competitividade) e Lei nº 14.133/2021 arts. 89-99 | Configura ilícito se documentado | A confirmar |
-| Familiar de Secretário de Saúde contratado por consórcio fiscalizado pela SMS | Violação | Violação | **Sim** (nepotismo via interposta pessoa jurídica — entendimento jurisprudencial) | Violação | Possível, se houve direcionamento | Possível, se houve direcionamento | Possível (art. 11) | Possível (advocacia administrativa, art. 321 CP, se houver patrocínio) | CF/88; SV13; Lei nº 12.813/2013 (parâmetro) | A confirmar |
-| Concentração familiar em cargos por sobrenome "Ramos" | A analisar | A analisar | **Discutível** (precisa parentesco até 3º grau provado) | A analisar | — | — | Exige dolo e dano | Improvável | SV 13 | Requer prova documental de parentesco |
+### 5.1. Roberto Alcântara Botelho (ex-prefeito; adversário em 2020 e 2024)
 
----
+| Campo | Conteúdo |
+|---|---|
+| Nome completo | Roberto Alcântara Botelho |
+| Profissão | Cirurgião-dentista (graduado pela UFMG) |
+| Histórico institucional em Jequitinhonha | Prefeito por 3 mandatos; Vice-prefeito; ex-Secretário Municipal de Saúde |
+| Candidatura em 2004 | Prefeito — CNPJ eleitoral 06.680.503/0001-31 (BAIXADA em 31/12/2004) — endereço Rua Cel. Ramiro Pereira, 174, Centro, Jequitinhonha (Caixa Postal 10) |
+| Candidatura em 2020 | Prefeito (PSDB) — derrotado por Nilo Souto (46,43% x 49,02%) |
+| Candidatura em 2024 | Prefeito (PSDB) — derrotado por Nilo Souto (39,22% x 59,87%) |
+| Cônjuge | Sônia Madi, sócia da empresa Angelus (referência odontológica) — desde 1986 |
+| Classificação | **Fato comprovado** |
 
-## 15. Pesquisas e consultas obrigatórias adicionais (acervo a obter)
+### 5.2. Heferauto Ltda — Família Botelho/Soares Pereira
 
-Conforme exigido pelo escopo, registra-se relação consolidada do material **não recuperado por meios automatizados** e que deve ser obtido via LAI, ofício à Câmara Municipal, requisição ao MPMG ou consulta direta nas plataformas oficiais. Esse acervo é a precondição para que as **hipóteses se convertam em indícios** e os **indícios em fatos**.
+| Campo | Conteúdo |
+|---|---|
+| Razão social | HEFERAUTO LTDA |
+| Nome fantasia | HEFERAUTO |
+| CNPJ | 21.528.047/0001-00 |
+| Início | 22/08/1968 |
+| Situação cadastral | **INAPTA** desde 22/01/2019 (motivo: omissão de declarações) |
+| Endereço | Rua Inácio Murta, 274, Centro, Jequitinhonha/MG |
+| CNAE | 4530-7/03 — Comércio a varejo de peças e acessórios novos para veículos automotores |
+| Sócio-administrador | **FERNANDO SOARES PEREIRA** — CPF mascarado ***375816**, maior de 80 anos, desde 22/08/1968 |
+| Sócio | **LEONARDO BOTELHO SOARES PEREIRA** — CPF mascarado ***142806**, faixa etária 51-60 anos, sócio desde 03/09/1991 — **representado por FRANCISCO CORDEIRO DOS SANTOS** (CPF ***880776**) como administrador |
+| Significado | Família Botelho local presente no comércio automotivo do município; **mesmo administrador legal Francisco Cordeiro dos Santos atua na Agro-Souto (família do prefeito) e na Heferauto (família ligada ao patronímico do adversário)** |
+| Fonte primária | API BrasilAPI/Receita Federal |
 
-1. Relação completa de servidores efetivos, comissionados, temporários e contratados (com cargo, lotação, ato de nomeação, ato de exoneração, remuneração).
-2. Relação de cargos comissionados por secretaria, com ato de criação (lei municipal) e ato de provimento.
-3. Atos de nomeação e exoneração publicados no DOMM/AMM-MG referentes a 2021-2026.
-4. Declarações de inexistência de parentesco entre servidores comissionados e agentes políticos.
-5. Declarações de inexistência de conflito de interesse de secretários e dirigentes.
-6. Relação de secretários e ordenadores de despesa por pasta (decreto de delegação).
-7. Relação de pregoeiros, agentes de contratação, equipe de apoio, membros de comissão de contratação, fiscais e gestores de contrato, com portaria de designação.
-8. Relação completa de processos licitatórios 2021-2026 (modalidade, objeto, valor estimado e contratado, vencedor, CNPJ, sócios, fiscal, gestor, ordenador).
-9. Relação completa de processos de dispensa e inexigibilidade 2021-2026, com fundamento legal específico.
-10. Termos de referência, ETPs (Estudos Técnicos Preliminares), mapas de risco, pesquisas de preço.
-11. Pareceres jurídicos da PGM e pareceres da Controladoria interna.
-12. Contratos, aditivos, apostilamentos, notas fiscais, empenhos, liquidações e pagamentos.
-13. Relação de consórcios públicos com participação de Jequitinhonha (inclusive lista atual e histórica).
-14. Contratos de rateio com cada consórcio, por ano.
-15. Contratos de programa com consórcios, por objeto.
-16. Valores efetivamente repassados a cada consórcio (CIMVAJER, CIMBAJE, CISNORJE, CIM Jequitinhonha, etc.) por exercício.
-17. Indicação formal dos representantes do município em cada consórcio (titulares e suplentes) e atos de designação.
-18. Indicação dos servidores responsáveis por fiscalizar contratos, convênios ou termos com consórcios.
-19. Relação de pessoas físicas que prestam serviços ao município **por meio de consórcios**.
-20. Relação de profissionais de saúde contratados, credenciados ou disponibilizados por consórcios para atuação em Jequitinhonha.
-21. Documentos sobre a eventual atuação da **esposa do Secretário Henrique Ramos de Sousa** em consórcio público.
-22. Indicação formal de quem fiscaliza os serviços prestados pelos consórcios de saúde no município.
-23. Relatórios de execução dos serviços prestados pelos consórcios.
-24. Notas fiscais, folhas de pagamento e relatórios de pagamento referentes a profissionais disponibilizados por consórcios.
-25. Manifestações da Procuradoria e da Controladoria sobre conflito de interesse, nepotismo ou impedimento em contratos e consórcios.
-26. **Confirmação documental** da existência (ou inexistência) da Sra. Laura Botelho Antunes na estrutura administrativa.
-27. **Confirmação documental** da relação conjugal entre Julimara Ramos Brito e Marco Antonio Moreira, e do eventual cargo público dele.
-28. Estatuto, regimento interno, atas de assembleia e atos do CIMVAJER, do CIMBAJE e do CIM Jequitinhonha referentes a 2021-2026.
+### 5.3. Sra. Laura Botelho Antunes (informação do usuário)
+
+| Campo | Conteúdo |
+|---|---|
+| Status | **Informação inicial do usuário, NÃO LOCALIZADA em fontes públicas consultadas** |
+| Hipótese investigativa | Pode ser parente do ramo Botelho local; pode ocupar cargo de assessoria/subsecretaria não listada na página oficial de Secretarias; pode ter assumido recentemente sem indexação em buscadores |
+| Diligência prioritária | LAI requerendo organograma completo da Prefeitura, com TODOS os cargos comissionados, coordenadorias, assessorias e subsecretarias, e nomes |
 
 ---
 
-## 16. Perguntas específicas para diligências formais
+## 6. Setor de licitações e contratos (atualizado)
 
-**Sobre os consórcios:**
-- Quais consórcios públicos têm participação do Município de Jequitinhonha/MG, ativos e inativos, no período 2017-2026?
-- Qual o valor repassado a cada consórcio nos últimos cinco exercícios?
-- Quem é o representante do município em cada consórcio (titular e suplente) e qual o ato de designação?
-- O prefeito Nilo Barbuda Souto exerce ou exerceu, além da Presidência do CIMVAJER 2025/2026, **qualquer outro cargo** em diretoria, conselho fiscal ou conselho administrativo de outros consórcios? Em quais períodos?
-- Quem fiscaliza os contratos de rateio, contratos de programa e demais instrumentos firmados com cada consórcio?
+### 6.1. Estatísticas conhecidas
 
-**Sobre a Secretaria de Saúde:**
-- O Secretário Henrique Ramos de Sousa possui atribuição formal de ordenação de despesa, fiscalização, gestão ou aprovação de despesas vinculadas a consórcios públicos de saúde?
-- A cônjuge do Secretário presta ou prestou serviço por meio de consórcio público vinculado ao município? Em caso positivo: qual o vínculo, função, período, local, remuneração e fonte do recurso?
-- Existe declaração formal de inexistência de conflito de interesse ou impedimento firmada pelo Secretário?
-- Quem atesta a execução dos serviços prestados por profissionais vinculados aos consórcios?
-- Quem autoriza pagamentos relacionados aos serviços prestados por consórcios?
+- **Prefeitura Municipal de Jequitinhonha:** 55 processos licitatórios em 2024; 23 em 2025 (ano em andamento); 150 licitações homologadas em registro; 28 dispensas de licitação; 77 pregões eletrônicos; 32 pregões presenciais.
+- Modalidades em uso: pregão eletrônico, pregão presencial, dispensa, inexigibilidade, chamamento público, credenciamento.
+- Regramento: Lei nº 14.133/2021 + Portaria interna nº 024/2023 (texto não recuperado).
 
-**Sobre concentração familiar:**
-- Existem familiares (até 3º grau, inclusive afins) de prefeito, vice-prefeito, secretários, vereadores ou ordenadores de despesa atuando na Prefeitura, em consórcios ou em fornecedores?
-- Há manifestação formal da Procuradoria-Geral do Município sobre eventuais hipóteses de nepotismo?
+### 6.2. Nomes ainda não recuperados em fontes públicas
 
----
+| Função | Nome | Status |
+|---|---|---|
+| Agente de contratação | Não localizado | LAI prioritária |
+| Pregoeiro(a) | Não localizado | LAI prioritária |
+| Equipe de apoio | Não localizado | LAI prioritária |
+| Comissão de contratação | Não localizado | LAI prioritária |
+| Fiscais de contrato (por pasta) | Não localizado | LAI prioritária |
+| Gestores de contrato (por pasta) | Não localizado | LAI prioritária |
+| Procurador-Geral do Município | Não localizado em buscador | LAI |
+| Controlador-Geral do Município | Não localizado em buscador | LAI |
+| Chefe de Gabinete | Não localizado em buscador | LAI |
 
-## 17. Recomendações de diligências
+### 6.3. Editais públicos identificados (2026)
 
-| Prioridade | Diligência | Órgão / instância | Justificativa |
-|---|---|---|---|
-| 1 | Protocolar pedidos de Lei de Acesso à Informação à Prefeitura Municipal de Jequitinhonha solicitando os itens 1-28 da Seção 15 | Prefeitura / Ouvidoria / CGM | Base documental para todas as hipóteses |
-| 2 | LAI ao CIMVAJER solicitando estatuto, contratos de rateio, atas 2021-2026, relação de empregados/contratados/credenciados, folha do consórcio | CIMVAJER | Confirmar achado nº 3 |
-| 3 | LAI ao CIMBAJE e ao CISNORJE com mesmo escopo | CIMBAJE; CISNORJE | Mapear contratações |
-| 4 | Consulta PNCP por município (Jequitinhonha) e por CNPJ (Agro-Souto e demais empresas do grupo familiar) | PNCP/gov.br | Investigar contratações |
-| 5 | Cruzamento de fornecedores entre Prefeitura, CIMVAJER, CIMBAJE, CIM Jequitinhonha e CISNORJE | Portais de transparência | Identificar sobreposição |
-| 6 | Consulta JUCEMG para identificar empresas em que Nilo Souto, Ana Maria, Fernando (espólio) e demais familiares figurem como sócios | JUCEMG | Mapa societário do grupo |
-| 7 | Consulta CNES para identificar profissionais lotados em estabelecimentos do município e a sua origem contratual (efetivo, terceirizado, consórcio) | CNES/DATASUS | Apurar hipótese da esposa do Secretário de Saúde |
-| 8 | Consulta TSE/DivulgaCandContas para histórico eleitoral completo de Nilo Souto, Ana Maria, demais secretários, doadores de campanha e empresas fornecedoras de campanha | TSE | Apurar vínculos eleitorais |
-| 9 | Consulta CEIS, CNEP, TCE-MG (jurisdicionados) e portal do MPMG (notícias-de-fato) sobre Jequitinhonha | CGU; TCE-MG; MPMG | Antecedentes administrativos |
-| 10 | Requerimento à Câmara Municipal de Jequitinhonha para informar relação atual de secretários, decretos de nomeação e estrutura administrativa completa | Câmara | Confirmar/descartar existência da Sra. Laura Botelho Antunes |
-| 11 | Pedido de cópia do parecer da PGM sobre o tema "nepotismo e cargos políticos" | PGM | Antecedentes jurídicos internos |
-| 12 | Notícia de Fato preliminar ao MPMG (Promotoria de Justiça da Comarca de Jequitinhonha) com este relatório consolidado e diligências sugeridas | MPMG | Encaminhamento formal |
-| 13 | Representação ao TCE-MG para auditoria de licitações e contratos 2021-2026 e dos contratos de rateio com consórcios | TCE-MG | Controle externo |
+| Edital | Objeto | Valor estimado |
+|---|---|---|
+| Edital 010/2026 | Vestuário e têxteis | R$ 1.427.263,00 |
+| Edital 011/2026 | Materiais de escritório | R$ 4.804.776,00 |
+| Edital Chamamento Público 14/2026 | Serviços de alimentação e hospedagem | R$ 1.697.940,00 |
+
+Esses três editais (cuja consulta exige plataforma Alerta Licitação) merecem diligência específica: vencedores, participantes, fiscais, gestores.
 
 ---
 
-## 18. Conclusão técnica
+## 7. Consórcios públicos — caracterização completa (atualizado)
 
-**Fatos comprovados documentalmente em fontes públicas:**
-- Nilo Barbuda Souto é o prefeito de Jequitinhonha/MG, reeleito em 2024 (PDT, número 12, 59,87% dos votos);
-- Nilo Barbuda Souto é o **Presidente da Diretoria Executiva do CIMVAJER (biênio 2025/2026)**;
-- Ana Maria Ramos Moreira Souto, cônjuge do prefeito, ocupa formalmente a Secretaria Municipal de Desenvolvimento Social;
-- Henrique Ramos de Sousa ocupa a Secretaria Municipal de Saúde;
-- Julimara Ramos Brito ocupa a Secretaria Municipal de Administração e Finanças;
-- Existe a empresa Agro-Souto Comércio e Pecuária Ltda (CNPJ 23.823.057/0001-96), sediada em Jequitinhonha, do ramo veterinário, administrada pelo filho do prefeito (Fernando Souto Moreira, falecido em 04/05/2026);
-- O CISNORJE decretou calamidade financeira em 06/01/2025, afetando o SAMU em 86 municípios da macrorregião Nordeste/Jequitinhonha.
+### 7.1. CIMVAJER
 
-**Indícios fortes:**
-- Concentração de sobrenome "Ramos" em três secretarias do primeiro escalão (Ana Maria, Julimara, Henrique) e em pelo menos um servidor efetivo (Danniel), sugerindo possibilidade de parentesco extenso a confirmar;
-- Existência de grupo familiar do prefeito com presença econômica relevante na cidade (Agro-Souto + fazendas + empresa de sal mineral);
-- Jequitinhonha integra ao menos CIMVAJER, CIMBAJE e provavelmente CISNORJE, com a Presidência do CIMVAJER nas mãos do próprio prefeito do município;
-- Adversário eleitoral recorrente (Roberto Botelho/PSDB) carrega sobrenome coincidente com a Sra. "Laura Botelho Antunes" referida pelo usuário, demandando checagem de parentesco e do real status dela na Prefeitura.
+| Campo | Conteúdo |
+|---|---|
+| Razão social | CONSORCIO INTERMUNICIPAL MULTIFINALITARIO DO VALE DO JEQUITINHONHA E REGIAO |
+| Nome fantasia | CIMVAJER |
+| CNPJ | 28.168.515/0001-14 |
+| Natureza jurídica | Consórcio Público de Direito Público (Associação Pública, código 1210) |
+| Ente federativo responsável | ALMENARA - MG |
+| Sede | Rua João de Oliveira Guimarães, 25, Parque São João, Almenara/MG, CEP 39900-000 |
+| Telefones | (33) 8848-0012 / (33) 3721-6203 |
+| Início | 07/07/2017 |
+| Situação cadastral | ATIVA |
+| **CNAE principal** | **8660-7/00 — Atividades de apoio à gestão de saúde** |
+| CNAEs secundários | 0161-0/99 (apoio à agricultura); **4929-9/02 (transporte rodoviário coletivo intermunicipal/interestadual sob fretamento)**; 7112-0/00 (engenharia); 7490-1/99 (atividades técnicas); 7990-2/00 (turismo); 8411-6/00 (adm. pública); 8412-4/00 (regulação de saúde, educação, social); 8413-2/00 (regulação econômica); 8599-6/04 (treinamento); **8610-1/02 (pronto-socorro)**; **8621-6/02 (serviços móveis de urgência tipo SAMU)**; **8640-2/02 (laboratórios clínicos)**; 8690-9/99 (atenção à saúde humana); 9329-8/99 (recreação); 9499-5/00 (atividades associativas) |
+| **Diretoria Executiva 2025/2026** | **Presidente: Nilo Barbuda Souto (Prefeito de Jequitinhonha); Vice: Ideuvan de Souza Avelar (Prefeito de Felisburgo); Diretor Financeiro: Adimildon Antunes de Almenara (Prefeito de Rio do Prado); Diretora de Patrimônio: Irone Bento Dias de Oliveira (Prefeita de Mata Verde); Secretário do Conselho: Cândido Ferraz Alves (Prefeito de Ponto dos Volantes)** |
+| Fontes | Receita Federal (API direta); Cosecs-MG; CIMVAJER (página da Diretoria) |
 
-**Indícios médios:**
-- Possível parentesco entre Ana Maria **Moreira** Souto e o Sr. Marco Antonio **Moreira** alegado como cônjuge da Sec. Julimara Ramos Brito;
-- Possível parentesco entre Nilo **Souto** e Márcio Ferreira **Souto** (Presidente do CIMBAJE).
+### 7.2. CIMBAJE
 
-**Hipóteses investigativas (a confirmar ou descartar):**
-- Conflito de interesse do Secretário de Saúde Henrique em razão de eventual vínculo da esposa com consórcio público;
-- Concentração familiar na Prefeitura (família Ramos / Moreira / Botelho / Antunes);
-- Contratação de empresa familiar do prefeito pela Prefeitura ou consórcios;
-- Direcionamento em credenciamentos, dispensas ou inexigibilidades;
-- Acúmulo de presidências de consórcios pelo prefeito Nilo (informação inicial, apenas o CIMVAJER foi confirmado).
+| Campo | Conteúdo |
+|---|---|
+| Razão social | CONSORCIO MULTIFINALITARIO DO BAIXO JEQUITINHONHA |
+| Nome fantasia | CIMBAJE |
+| CNPJ | 07.306.549/0001-58 |
+| Natureza jurídica | Consórcio Público de Direito Público (Associação Pública) |
+| Ente federativo responsável | JACINTO - MG |
+| Sede | Rua Prefeito Estevam Melo, 02 (térreo do prédio), Nossa Senhora das Graças, Jacinto/MG, CEP 39930-000 |
+| Telefone | (33) 3723-1270 |
+| Início | 29/03/2005 |
+| Situação cadastral | ATIVA |
+| **CNAE principal** | **8660-7/00 — Atividades de apoio à gestão de saúde** |
+| CNAEs secundários | 0161-0/99 (apoio à agricultura); 0162-8/99 (apoio à pecuária); 0230-6/00 (apoio à produção florestal); 0322-1/07 (apoio à aquicultura); 3900-5/00 (descontaminação e gestão de resíduos); 7490-1/99 (atividades técnicas); 7990-2/00 (turismo); 8411-6/00 (adm. pública); 8412-4/00 (regulação social); **8610-1/02 (pronto-socorro); 8621-6/02 (SAMU); 8630-5/06 (vacinação e imunização humana); 8640-2/02 (laboratórios clínicos)**; 8690-9/99 (saúde humana); 9329-8/99; 9430-8/00 (direitos sociais); 9493-6/00 (cultura/arte); 9499-5/00 |
+| Presidência atual (2025/2026) | Márcio Ferreira Souto (Prefeito de Pedra Azul) — **coincidência patronímica "Souto" com o prefeito Nilo Souto, parentesco a confirmar** |
+| Municípios participantes | Bandeira, Cachoeira de Pajéu, Capim Branco, Divisópolis, Felizburgo, Jacinto, **Jequitinhonha**, Joaíma, Jordânia, Medina, Palmópolis, Pedra Azul, Rio do Pardo, Rubim, Salto da Divisa, Santa Maria do Salto |
+| Secretário Executivo | Auréliomarks Matos de Oliveira |
+| Fonte | Receita Federal (API direta); Cosecs-MG |
 
-**Informações iniciais ainda não confirmadas:**
-- Existência da Sra. Laura Botelho Antunes como secretária municipal;
-- Identidade da esposa do Secretário Henrique e o consórcio em que ela trabalha;
-- Conjugalidade entre Julimara Ramos Brito e Marco Antonio Moreira;
-- Presidência de outros consórcios pelo prefeito Nilo Souto;
-- Existência de "irmão, marido e familiares" da Sra. Laura na Prefeitura.
+### 7.3. CIM Jequitinhonha (com licitação suspensa pelo TCE-MG)
 
-**Pontos não localizados em fonte pública consultada (exigem LAI):**
-- Folha de pagamento e organograma nominal;
-- Atos de nomeação e exoneração;
-- Pregoeiros, agentes de contratação, fiscais e gestores;
-- Contratos individuais, dispensas, inexigibilidades;
-- Quadro societário completo do grupo Souto;
-- Atas, estatutos e contratos de rateio dos consórcios.
+| Campo | Conteúdo |
+|---|---|
+| Razão social | CONSORCIO INTEGRADO MULTIFINALITARIO DO VALE DO JEQUITINHONHA |
+| Nome fantasia | CIM JEQUITINHONHA |
+| CNPJ | 22.835.076/0001-70 |
+| Natureza jurídica | Consórcio Público de Direito Público (Associação Pública) |
+| Ente federativo responsável | GOUVEIA - MG |
+| Sede | Rua Zeca Bruno, 131, Salas 01 e 03, Bairro Cazuza, Diamantina/MG, CEP 39100-000 |
+| Telefones | (38) 3531-2357 / (38) 3531-2597 |
+| Início | 08/07/2015 |
+| Situação cadastral | ATIVA |
+| CNAE principal | 9499-5/00 — Atividades associativas |
+| CNAEs secundários | **3812-2/00 (coleta de resíduos perigosos)**; 4211-1/01 (construção de rodovias e ferrovias); 4211-1/02 (pintura para sinalização rodoviária); 4213-8/00 (urbanização); 4222-7/01 (redes de abastecimento de água/esgoto); 4222-7/02 (irrigação); 4299-5/01 (instalações esportivas); 4399-1/01 (administração de obras); 4399-1/02 (andaimes); 4399-1/03 (alvenaria); 4399-1/04 (equipamentos para transporte/elevação); 4399-1/05 (perfuração e construção de poços de água); 4930-2/01 (transporte rodoviário de carga); **4930-2/03 (transporte rodoviário de produtos perigosos)**; 5229-0/02 (reboque); 7112-0/00 (engenharia); 7119-7/01 (cartografia/topografia/geodésia); 7119-7/03 (desenho técnico); 7119-7/04 (perícia técnica); 8130-3/00 (paisagismo); 9319-1/99 (esportivas) |
+| Presidente atual | José Eduardo de Paula Rabelo (Prefeito de Couto de Magalhães de Minas) |
+| Municípios participantes | 20 municípios (lista completa a confirmar — Jequitinhonha **a confirmar** se é membro pleno) |
+| **EVENTO CRÍTICO: SUSPENSÃO TCE-MG (fevereiro/2026)** | **Processo Licitatório nº 52/2025 (Concorrência Pública 052/2025) — Registro de Preços para "manutenção preventiva e corretiva de vias urbanas/rurais" — valor R$ 360.385.674,44 — SUSPENSO pelo TCE-MG por irregularidades (ausência de detalhamento, modalidade inadequada, indícios de direcionamento, quantitativos superestimados, especificações falhas)** |
+| Atas de Registro de Preços ativas conhecidas (objeto de adesão) | ARP 036/2023 (sondagens, topografia, projetos vinculados ao Acordo pró-Brumadinho); ARP 037/2023; ARP 053/2024 (Pregão Eletrônico 027/2024); ARP 065/2024 (Pregão Eletrônico 033/2024); demais a apurar |
+| Municípios "carona" (adesões já identificadas) | Fortuna de Minas/MG; Saquarema/RJ; Sabará/MG (intenção); Bom Sucesso/MG; Ribas do Rio Pardo/MS |
+| Fonte | Receita Federal (API direta); TCE-MG (decisão de suspensão); Estado de Minas; Diário do Comércio; SGP; Itatiaia |
 
-**Providências recomendadas (síntese):**
-- (i) protocolar pedidos LAI imediatamente, conforme Seção 15-17;
-- (ii) requerer à Câmara Municipal informações sobre estrutura administrativa atual;
-- (iii) consultar o PNCP para mapear contratações;
-- (iv) cruzar dados societários (JUCEMG) com nomes de agentes públicos;
-- (v) registrar notícia-de-fato no MPMG **apenas** após consolidação do acervo documental, para evitar denúncia precipitada;
-- (vi) considerar representação ao TCE-MG, especialmente quanto aos contratos de rateio.
+### 7.4. CISNORJE
+
+| Campo | Conteúdo |
+|---|---|
+| Razão social | Consórcio Intermunicipal de Saúde da Rede de Urgência do Nordeste/Jequitinhonha |
+| Sigla | CISNORJE |
+| Sede | Teófilo Otoni/MG |
+| Composição | 86 municípios + Estado MG + União; 22 cidades com bases descentralizadas SAMU |
+| Presidente | Marcelo Adriano Xavier de Vasconcelos |
+| Conselheiro | José Eduardo de Paula Rabelo (que também preside o CIM Jequitinhonha) |
+| **EVENTO CRÍTICO: CALAMIDADE FINANCEIRA (06/01/2025)** | Decreto 001/2025 declarou estado de calamidade — dívida ~ R$ 14 milhões; reportagens posteriores indicam rombo regional de R$ 56,8 milhões; risco de interrupção do SAMU em 86 municípios; medidas autorizadas: renegociação, revisão contratual, suspensão de despesas não essenciais, ações judiciais e extrajudiciais. Prazo até 180 dias prorrogáveis |
+| Fonte | CISNORJE; Estado de Minas; Correio de Minas; Diário do Rio Doce; O Fator |
+
+### 7.5. CONSÓRCIO ENCOSTAS CIM-JEQUITINHONHA (consórcio PRIVADO)
+
+| Campo | Conteúdo |
+|---|---|
+| Razão social | CONSORCIO ENCOSTAS CIM-JEQUITINHONHA |
+| CNPJ | 55.035.108/0001-01 |
+| Natureza jurídica | **Consórcio de Sociedades (2151)** — consórcio empresarial PRIVADO, regime tributário Lucro Presumido |
+| Início | **07/05/2024** |
+| Situação cadastral | ATIVA |
+| Sede | Rua Rosa Branca, 230, Pilar, Belo Horizonte/MG, CEP 30390-220 — **mesmo endereço da Construtora Itamaracá** |
+| Telefone | (31) 3194-1181 (mesmo da Construtora Itamaracá) |
+| CNAE principal | 7112-0/00 — Serviços de engenharia |
+| CNAEs secundários | 4212-0/00 (obras de arte especiais); 4299-5/99 (engenharia civil) |
+| **Sócios consorciados** | **(1) CONSTRUTORA ITAMARACÁ LTDA — CNPJ 30.018.048/0001-98; (2) PILAR ENGENHARIA LTDA — CNPJ 19.984.948/0001-57** |
+| Administrador | WELLINGTON JOSE AMARAL BELO (CPF ***637576**) |
+| Análise | O **nome "CIM-JEQUITINHONHA" na denominação do consórcio privado** indica direcionamento a licitações desse consórcio público. **Constituído poucos meses antes da licitação suspensa pelo TCE-MG (PL 52/2025 do CIM Jequitinhonha, R$ 360 milhões)**. Não há, nesta investigação, confirmação de adjudicação — mas o padrão (consórcio privado constituído sob medida + nome que sinaliza o ente licitante + área de atuação compatível com o objeto licitado) é classicamente examinado pelos órgãos de controle. **Recomenda-se cruzamento via PNCP.** |
+| Fonte | Receita Federal (API direta) |
+
+### 7.6. CONSTRUTORA ITAMARACÁ LTDA (sócia do Consórcio Encostas)
+
+| Campo | Conteúdo |
+|---|---|
+| Razão social | CONSTRUTORA ITAMARACA LTDA |
+| CNPJ | 30.018.048/0001-98 |
+| Início | 25/04/1978 |
+| Capital social | R$ 5.000.000,00 |
+| Endereço | Rua Rosa Branca, 230, Pilar, Belo Horizonte/MG |
+| CNAE | 4120-4/00 (Construção de edifícios) + 4212-0/00; 4213-8/00; 4299-5/99; **4313-4/00 (terraplenagem)**; 4319-3/00 (preparação de terreno); 6810-2/01 (compra/venda imóveis próprios); 7112-0/00 (engenharia); 7711-0/00 (locação de automóveis sem condutor); 7732-2/01 (locação de máquinas para construção) |
+| Quadro societário | Belo Holding (Wellington Belo); Ita Holding (Marcio Duarte Camara); Schiavon Holding (Paulo Cesar Schiavon); Fernanda Camara Jordan (administradora desde 29/11/2023); Marcio Duarte Camara; Paulo Cesar Schiavon; Wellington Jose Amaral Belo |
+| SCPs (Sociedades em Conta de Participação) — 2021 a 2024 | A construtora opera dezenas de SCPs em LUCRO PRESUMIDO — estrutura típica de incorporação imobiliária, mas que merece due diligence em si |
+| Situação | ATIVA |
+| Fonte | Receita Federal (API direta) |
+
+### 7.7. PILAR ENGENHARIA LTDA (sócia do Consórcio Encostas)
+
+| Campo | Conteúdo |
+|---|---|
+| Razão social | PILAR ENGENHARIA LTDA |
+| CNPJ | 19.984.948/0001-57 |
+| Início | 31/03/2014 |
+| Capital social | R$ 120.000,00 |
+| Endereço | Av. Dom Pedro II, 2828, Andar 3, Caiçaras, Belo Horizonte/MG, CEP 30770-162 |
+| Telefones | (31) 3411-2789 / (31) 3561-3115 |
+| **Sócio-administrador atual (único)** | **DIOMEDES MOREIRA MOURA** — CPF mascarado ***212106**, faixa etária 51-60 anos, ÚNICO sócio desde 06/08/2025 |
+| CNAE principal | 4120-4/00 (Construção de edifícios) |
+| CNAEs secundários | 3811-4/00 (coleta de resíduos não perigosos); 4211-1/01 (rodovias/ferrovias); 4211-1/02 (sinalização rodoviária); 4299-5/99; 4313-4/00 (terraplenagem); 4319-3/00; 4330-4/04 (pintura); 4330-4/05 (revestimentos); 8129-0/00 (limpeza) |
+| Optante Simples Nacional | Sim |
+| Situação | ATIVA |
+| Fonte | Receita Federal (API direta) |
+
+### 7.8. BELO HOLDING LTDA
+
+| Campo | Conteúdo |
+|---|---|
+| Razão social | BELO HOLDING LTDA |
+| CNPJ | 48.886.234/0001-04 |
+| Início | 14/12/2022 |
+| Capital social | R$ 1.250.000,00 |
+| Endereço | Rua Professor Raimundo Candido, 52, Apt. 1001, Belvedere, Belo Horizonte/MG |
+| Sócio-administrador | WELLINGTON JOSE AMARAL BELO |
+| Atividade | Outras sociedades de participação |
+| Fonte | Receita Federal (API direta) |
 
 ---
 
-## 19. Fontes
+## 8. Hospital São Miguel (potencial parceiro/conveniado SUS)
 
-| Título | Órgão / site | Link | Data de acesso | Tipo de fonte | Confiabilidade |
+| Campo | Conteúdo |
+|---|---|
+| Razão social | ASSOCIACAO HOSPITAL SAO MIGUEL |
+| CNPJ | 21.528.112/0001-90 |
+| Natureza jurídica | Associação Privada (3999) |
+| Início | 29/04/1969 |
+| Endereço | Rua Frei Emiliano Soede, 300, Centro, Jequitinhonha/MG |
+| Telefone | (33) 3741-1461 / (33) 9956-1461 |
+| CNAE | 8610-1/02 — Pronto-socorro e unidades hospitalares para atendimento a urgências |
+| Diretor atual | ERON COSTA SERRATO (CPF ***618998**, faixa 51-60 anos, qualificação 10 — Diretor desde 24/02/2025) |
+| Regime tributário | Isento de IRPJ (2018-2022); Imune de IRPJ (2023-2024) |
+| Situação | ATIVA |
+| Observação | Como entidade hospitalar com possíveis convênios SUS, **as transferências do município, eventuais cessões de servidores, contratos de prestação de serviço e CNES devem ser auditados** |
+| Fonte | Receita Federal (API direta); CNES |
+
+---
+
+## 9. Análise específica: Prefeito Nilo Barbuda Souto e atuação em consórcios públicos (revisada)
+
+| Quesito | Resposta atualizada | Classificação |
+|---|---|---|
+| Nome completo | **Nilo Barbuda Souto** | Fato comprovado |
+| Histórico político eleitoral | **Vice-Prefeito eleito em 2004**; Prefeito eleito em 15/11/2020 (49,02%); Prefeito reeleito em 06/10/2024 (59,87%, no 1º turno) — três passagens eleitorais ao Executivo Municipal | Fato comprovado |
+| Partido / coligação 2024 | PDT (nº 12) — coligação "Com O Povo Para Fazer Mais": PP, PODE, PSB, SOLIDARIEDADE, Federação Brasil da Esperança (PT/PCdoB/PV), REPUBLICANOS, PDT | Fato comprovado |
+| Vice-Prefeito atual | "Zé Rolinha" (PT) — nome civil a confirmar | Indício forte |
+| Bens declarados (2024) | R$ 2.699.185,51 | Fato comprovado |
+| **Participação societária em empresas privadas** | **Sócio-administrador da Agro-Souto Comércio e Pecuária Ltda (CNPJ 23.823.057/0001-96) desde 04/01/1995 — empresa ATIVA até a data de consulta (27/05/2026)** | **Fato comprovado** |
+| Atuação em consórcios | **Presidente da Diretoria Executiva do CIMVAJER 2025/2026** (consórcio de saúde com CNAE 8660-7/00) | Fato comprovado |
+| Presidência de mais de um consórcio | **Não localizada** em fonte pública para o biênio atual (somente CIMVAJER confirmado); informação inicial do usuário sobre presidência múltipla **permanece pendente** | Pendente |
+| Poderes do presidente | Representação institucional, presidência de Assembleia, ordenação de despesa (a confirmar pelo estatuto), assinatura de contratos | Indício forte (depende do estatuto) |
+| Repasses de Jequitinhonha ao CIMVAJER | Necessária verificação documental (LAI ao município e ao consórcio) | Pendente |
+| Empresa familiar do prefeito e potencial conflito com contratações públicas | **Hipótese investigativa de alta relevância:** se a Agro-Souto fornece ou cota com a Prefeitura, com o CIMVAJER ou com o CIM Jequitinhonha (em qualquer dos CNAEs registrados — medicamentos veterinários, ferragens, materiais de construção, alimentos, vestuário, **armas e munições**), incidiria o impedimento do art. 14, II, da Lei nº 14.133/2021. **Diligência prioritária:** consulta PNCP por CNPJ 23.823.057/0001-96, 21.720.852/0001-23 e variações; cruzamento de pagamentos no Portal da Transparência. | **Hipótese investigativa** |
+| Documentos faltantes | Estatuto do CIMVAJER; protocolo de intenções; contratos de rateio; atas de assembleia 2021-2026; relação de empregados/contratados/credenciados do consórcio | — |
+
+---
+
+## 10. Análise específica: Secretário de Saúde Henrique e possível vínculo da esposa com consórcio público (revisada)
+
+| Quesito | Resposta atualizada | Classificação |
+|---|---|---|
+| Nome completo | Henrique Ramos de Sousa | Fato comprovado |
+| Cargo formal | Secretário Municipal de Saúde de Jequitinhonha/MG | Fato comprovado |
+| **Reforço analítico:** consórcios em que Jequitinhonha participa e que executam saúde | **CIMVAJER** (CNAE principal 8660-7/00 — Apoio à gestão de saúde — com pronto-socorro, SAMU, laboratórios clínicos); **CIMBAJE** (CNAE principal idêntico — apoio à gestão de saúde, com pronto-socorro, SAMU, vacinação, laboratórios); **CISNORJE** (SAMU regional, em calamidade financeira). **A hipótese de a esposa do Secretário de Saúde ser remunerada por algum desses consórcios torna-se documentalmente plausível, dada a especialização efetiva dos três consórcios em prestação de serviços de saúde.** | **Hipótese investigativa fortalecida** |
+| Nome completo da esposa | Não localizado | Pendente |
+| Consórcio | A apurar (hipótese: CIMVAJER, dado o vínculo direto do município como cidade-sede de Presidência) | Pendente |
+| Função, vínculo, remuneração | Não localizado | Pendente |
+| Henrique exerce poder decisório? | Provável (Secretário de Saúde do município consorciado é membro nato da Assembleia Geral do consórcio — cf. usual nos estatutos de consórcios públicos de saúde) | Hipótese investigativa |
+| Documentos faltantes | (i) Identificação da esposa; (ii) Contrato/credenciamento/edital; (iii) Folha do consórcio; (iv) Designação de fiscal Prefeitura-Consórcio; (v) Declarações de impedimento do Secretário | — |
+| Diligência prioritária | LAI ao CIMVAJER, CIMBAJE e CISNORJE solicitando: lista completa de empregados, contratados, credenciados; cruzamento por sobrenome "Sousa"/"Souza"/"Ramos"; e LAI à Prefeitura solicitando declaração formal de inexistência de conflito de interesse do Secretário | — |
+
+---
+
+## 11. Mapa de vínculos consolidado
+
+| Pessoa A | Pessoa B / empresa / consórcio | Tipo de vínculo | Status | Evidência | Fonte |
 |---|---|---|---|---|---|
-| Página oficial de Secretarias | Prefeitura Municipal de Jequitinhonha | https://jequitinhonha.mg.gov.br/secretarias/ | 27/05/2026 | Oficial (acesso indireto via indexação) | Alta |
-| Secretaria Municipal de Desenvolvimento Social | Prefeitura Municipal de Jequitinhonha | https://jequitinhonha.mg.gov.br/secretariaView/3_Secretaria-Municipal-de-Desenvolvimento-Social.html | 27/05/2026 | Oficial | Alta |
-| Página oficial do Gabinete | Prefeitura Municipal de Jequitinhonha | https://jequitinhonha.mg.gov.br/gabinete/ | 27/05/2026 | Oficial | Alta |
-| Página oficial de Licitações | Prefeitura Municipal de Jequitinhonha | https://jequitinhonha.mg.gov.br/licitacao/ | 27/05/2026 | Oficial | Alta |
-| Portal da Transparência Municipal | CidadesMG | https://cidadesmg.com.br/portaltransparencia/faces/user/portal.xhtml?Param=Jequitinhonha | 27/05/2026 | Oficial (terceirizado) | Alta |
-| Portal Federal da Transparência — Jequitinhonha/MG | CGU | https://portaldatransparencia.gov.br/localidades/3135803-jequitinhonha | 27/05/2026 | Oficial federal | Alta |
-| Diretoria Executiva CIMVAJER 2025/2026 | CIMVAJER | https://www.cimvajer.mg.gov.br/pagina/diretoria-excutiva-20252026 | 27/05/2026 | Oficial (indexado) | Alta |
-| Ficha do CIMVAJER | Cosecs-MG | https://www.cosecsmg.org.br/consorcio/cismev/62 | 27/05/2026 | Associativo público | Alta |
-| Ficha do CIMBAJE | Cosecs-MG | https://www.cosecsmg.org.br/consorcio/cimbaje/35 | 27/05/2026 | Associativo público | Alta |
-| Página oficial do CIM Jequitinhonha | CIM Jequitinhonha | https://www.cimjequitinhonha.mg.gov.br/ | 27/05/2026 | Oficial | Alta |
-| Portal de Transparência do CIM Jequitinhonha | CidadesMG | https://cidadesmg.com.br/portaltransparencia/faces/user/portal.xhtml?Param=CIIAmaje | 27/05/2026 | Oficial (terceirizado) | Alta |
-| Página do CIMBAJE | CIMBAJE | https://cimbaje.mg.gov.br/ | 27/05/2026 | Oficial | Alta |
-| Página do CISNORJE | CISNORJE | http://cisnorje.saude.mg.gov.br/sobre-o-consorcio/ | 27/05/2026 | Oficial | Alta |
-| Página do CIS-EVMJ | CIS-EVMJ | https://cisevmj.com/ | 27/05/2026 | Oficial | Alta |
-| Página do CISMEJE | CISMEJE | https://cismeje.mg.gov.br/ | 27/05/2026 | Oficial | Alta |
-| Câmara Municipal de Jequitinhonha | Câmara Municipal | https://www.jequitinhonha.mg.leg.br | 27/05/2026 | Oficial | Alta |
-| Câmara Municipal — Parlamentares | Câmara Municipal | https://www.camarajequitinhonha.mg.gov.br/parlamentares | 27/05/2026 | Oficial | Alta |
-| Perfil eleitoral de Nilo Souto 2024 | O Tempo | https://www.otempo.com.br/eleicoes/2024/candidatos/minas-gerais/jequitinhonha/prefeito/nilo-souto-12 | 27/05/2026 | Jornalística (com base TSE) | Alta |
-| Nilo Souto é eleito | CNN Brasil | https://www.cnnbrasil.com.br/eleicoes/nilo-souto-e-eleito-prefeito-de-jequitinhonha-mg/ | 27/05/2026 | Jornalística | Alta |
-| Perfil eleitoral de Nilo Souto 2024 (Tribuna PR) | Tribuna PR | https://www.tribunapr.com.br/eleicoes/2024/candidatos/mg/jequitinhonha/prefeito/nilo-souto-pdt-12/ | 27/05/2026 | Jornalística (com base TSE) | Alta |
-| Reportagem sobre falecimento de Fernando Souto Moreira | O Tempo | https://www.otempo.com.br/cidades/2026/5/4/saiba-quem-era-o-filho-de-prefeito-morto-em-queda-de-aviao-em-bh-dedicado-e-pilar-da-familia | 27/05/2026 | Jornalística | Alta |
-| Reportagem sobre prefeito que lamenta morte do filho | Rádio Itatiaia | https://www.itatiaia.com.br/brasil/sudeste/mg/prefeito-de-jequitinhonha-mg-lamenta-morte-do-filho-em-queda-de-aviao-em-bh/ | 27/05/2026 | Jornalística | Alta |
-| Reportagem sobre eleição 2020 de Nilo Souto | Aconteceu no Vale | https://aconteceunovale.com.br/portal/?p=169588 | 27/05/2026 | Jornalística regional | Média-alta |
-| Calamidade financeira no Vale do Jequitinhonha (CISNORJE) | Estado de Minas | https://www.em.com.br/gerais/2025/01/7039368-mg-cidades-do-jequitinhonha-e-nordeste-decretam-calamidade-em-saude.html | 27/05/2026 | Jornalística | Alta |
-| Calamidade financeira CISNORJE/Samu | Diário do Rio Doce | https://drd.com.br/cisnorje-samu-sob-calamidade-financeira/ | 27/05/2026 | Jornalística regional | Média-alta |
-| Decreto de calamidade CISNORJE | Diário Tribuna | https://diariotribuna.com.br/?p=28250 | 27/05/2026 | Jornalística regional | Média |
-| Rombo SAMU R$ 56,8 mi | O Fator | https://ofator.com.br/informacao/samu-denuncia-rombo-de-r-568-mi-e-servico-pode-parar-em-minas/ | 27/05/2026 | Jornalística | Média |
-| Concursos da Prefeitura — estrutura administrativa | PCI Concursos | https://www.pciconcursos.com.br/noticias/prefeitura-de-jequitinhonha-mg-abre-edital-de-concurso-publico-com-103-vagas | 27/05/2026 | Especializada | Alta |
-| Empresa Agro-Souto (CNPJ 23.823.057/0001-96) | CNPJ.biz / Solutudo / Petboop | https://www.solutudo.com.br/empresas/mg/jequitinhonha/farmacias-veterinarias/agro-souto-comercio-e-pecuaria-ltda-7803924 | 27/05/2026 | Cadastrais públicas | Alta |
-| CNPJ CIM Jequitinhonha 22.835.076/0001-70 | CNPJ.biz | https://cnpj.biz/22835076000170 | 27/05/2026 | Cadastrais públicas | Alta |
-| CNPJ CIMVAJER 28.168.515/0001-14 | Serasa Experian | https://empresas.serasaexperian.com.br/consulta-gratis/CONSORCIO-INTERMUNICIPAL-MULTIFINALITARIO-DO-VALE-DO-JEQUITINHONHA-22835076000170 | 27/05/2026 | Cadastrais públicas | Alta |
-| CIS-EVMJ CNPJ 01.014.332/0001-98 | Econodata | https://www.econodata.com.br/consulta-empresa/01014332000198-CONSORCIO-INTERMUNICIPAL-DE-SAUDE-ENTRE-OS-VALES-DO-MUCURI-E-JEQUITINHONHA | 27/05/2026 | Cadastrais públicas | Alta |
-| Consórcio Encostas CIM-Jequitinhonha CNPJ 55.035.108/0001-01 | Serasa Experian | https://empresas.serasaexperian.com.br/consulta-gratis/CONSORCIO-ENCOSTAS-CIM-JEQUITINHONHA-55035108000101 | 27/05/2026 | Cadastrais públicas | Alta |
-| Apuração eleitoral 2024 (Vereadores) | Gazeta do Povo | https://www.gazetadopovo.com.br/eleicoes/2024/resultado/mg/jequitinhonha/vereador | 27/05/2026 | Jornalística (com base TSE) | Alta |
-| Apuração eleitoral 2024 1º turno Jequitinhonha | Agência Brasil | https://agenciabrasil.ebc.com.br/eleicoes/2024/apuracao/mg/jequitinhonha | 27/05/2026 | Oficial | Alta |
-| Roberto Alcântara Botelho — ex-prefeito | PBH (servidor de SLU/PBH) | https://prefeitura.pbh.gov.br/slu/roberto-alcantara-botelho | 27/05/2026 | Oficial | Alta |
-| Hospital São Miguel — Jequitinhonha | UBS.med.br | https://ubs.med.br/hospital-sao-miguel-2120410/ | 27/05/2026 | Cadastrais | Média-alta |
-| Centro Estadual de Atenção Especializada de Jequitinhonha | UBS.med.br | https://ubs.med.br/centro-estadual-de-atencao-especializada-de-jequitinhonha-6323405/ | 27/05/2026 | Cadastrais | Média-alta |
-| Marcio Souto (Pedra Azul / CIMBAJE) | O Tempo | https://www.otempo.com.br/eleicoes/2024/candidatos/minas-gerais/pedra-azul/prefeito/marcio-souto-10 | 27/05/2026 | Jornalística (com base TSE) | Alta |
-| Decanor — perfil eleitoral 2024 | O Tempo | https://www.otempo.com.br/eleicoes/2024/candidatos/minas-gerais/jequitinhonha/vereador/decanor-13456 | 27/05/2026 | Jornalística (com base TSE) | Alta |
-| Marcelo Gil — perfil eleitoral 2024 (vereador) | O Tempo | https://www.otempo.com.br/eleicoes/2024/candidatos/minas-gerais/jequitinhonha/vereador/marcelo-gil-20789 | 27/05/2026 | Jornalística (com base TSE) | Alta |
-| TCE-MG Notícias (Vale do Jequitinhonha) | TCE-MG | https://www.tce.mg.gov.br/Primeira-Camara-do-TCE-suspende-licitacao-de-consorcio-do-Vale-do-Jequitinhonha.html/Noticia/1111627668 | 27/05/2026 | Oficial | Alta |
-| TCE-MG — julgamento irregular de licitação no Vale do Jequitinhonha | TCE-MG | https://www.tce.mg.gov.br/TCE-julga-irregular-edital-de-licitacao-e-multa-gestor-no-Vale-do-Jequitinhonha.html/Noticia/1111627726 | 27/05/2026 | Oficial | Alta |
-| Sobre o CISNORJE | CISNORJE | http://cisnorje.saude.mg.gov.br/sobre-o-consorcio/ | 27/05/2026 | Oficial | Alta |
-| Portal Nacional de Contratações Públicas | Gov.br / PNCP | https://www.gov.br/pncp/pt-br | 27/05/2026 | Oficial federal | Alta |
-| Divulga Cand Contas (TSE) | TSE | https://divulgacandcontas.tse.jus.br/ | 27/05/2026 | Oficial federal | Alta |
+| Nilo Barbuda Souto | Ana Maria Ramos Moreira Souto | Conjugal | **Confirmado** | Foto institucional + reportagens + primeira-dama declarada | Múltiplas |
+| Nilo Barbuda Souto | Fernando Moreira Souto | Filiação | **Confirmado** | Reportagens nacionais | O Tempo; CNN; Por Dentro de Minas |
+| Nilo Barbuda Souto | Gabriella de Moreira Souto | Filiação | **Confirmado** (sócia da Agro-Souto Nutrição com Fernando + reportagem sobre irmã na Austrália) | Receita Federal + O Tempo | API |
+| Nilo Barbuda Souto | Agro-Souto Comércio e Pecuária Ltda (CNPJ 23.823.057/0001-96) | **Societário direto (sócio-administrador desde 04/01/1995)** | **Confirmado — fato comprovado pela Receita Federal** | Receita Federal | API BrasilAPI |
+| Ana Maria Ramos Moreira Souto | Agro-Souto Comércio e Pecuária Ltda | **Societário direto (sócia desde 21/06/1989)** | **Confirmado** | Receita Federal | API BrasilAPI |
+| Fernando Moreira Souto | Agro-Souto Nutrição Animal Ltda (CNPJ 21.720.852/0001-23) | **Societário direto (sócio-administrador desde 21/01/2015)** | **Confirmado** | Receita Federal | API BrasilAPI |
+| Gabriella de Moreira Souto | Agro-Souto Nutrição Animal Ltda | **Societária direta (sócia desde 21/01/2015)** | **Confirmado** | Receita Federal | API BrasilAPI |
+| Francisco Cordeiro dos Santos | Agro-Souto Comércio e Pecuária Ltda | Administrador / representante legal de Ana Maria | **Confirmado** | Receita Federal | API BrasilAPI |
+| Francisco Cordeiro dos Santos | Heferauto Ltda | Administrador / representante legal de Leonardo Botelho Soares Pereira | **Confirmado** | Receita Federal | API BrasilAPI |
+| **Francisco Cordeiro dos Santos** | **Família Souto + Família Botelho** | **Administrador comum em PJ de ambos os grupos** | **Confirmado — investigar potencial articulação contábil-jurídica única** | Cruzamento Receita Federal | API |
+| Leonardo Botelho Soares Pereira | Heferauto Ltda | Societário (sócio desde 03/09/1991) | **Confirmado** | Receita Federal | API |
+| Nilo Barbuda Souto | CIMVAJER | Funcional — Presidente 2025/2026 | **Confirmado** | Página oficial CIMVAJER + Cosecs-MG | Indexação |
+| Nilo Barbuda Souto | Roberto Alcântara Botelho | Adversário eleitoral recorrente (2004, 2020, 2024) | **Confirmado** | Receita Federal (CNPJs eleitorais); reportagens | Múltiplas |
+| Ana Maria Ramos Moreira Souto | Julimara Ramos Brito | Patronímico Ramos coincidente | **Hipótese investigativa** | Mesmo sobrenome | Prefeitura |
+| Ana Maria Ramos Moreira Souto | Henrique Ramos de Sousa | Patronímico Ramos coincidente | **Hipótese investigativa** | Mesmo sobrenome | Prefeitura |
+| Nilo Barbuda Souto | Márcio Ferreira Souto (Pref. Pedra Azul; Pres. CIMBAJE 2025/2026) | Sobrenome Souto coincidente | **Hipótese investigativa** | Sobrenome comum entre dois prefeitos consorciados; ambos no biênio atual presidem consórcios mineiros do Vale | Cosecs-MG; O Tempo |
+| Leonardo Botelho Soares Pereira | Roberto Alcântara Botelho | Sobrenome Botelho coincidente | **Hipótese investigativa** | Sobrenome comum em município pequeno; Roberto é pessoa pública | Receita Federal; reportagens |
+| Laura Botelho Antunes (alegada) | Roberto Alcântara Botelho | Sobrenome Botelho coincidente | **Pendente** | Apenas informação do usuário | Usuário |
+| Consórcio Encostas CIM-Jequitinhonha (CNPJ 55.035.108/0001-01) | CIM Jequitinhonha (consórcio público, CNPJ 22.835.076/0001-70) | Nome corporativo cola **CIM-JEQUITINHONHA** ao nome do consórcio privado, constituído em 07/05/2024, com sede em Belo Horizonte | **Indício forte de constituição com vista a licitações desse consórcio público; verificar adjudicações** | Receita Federal | API |
+| Construtora Itamaracá + Pilar Engenharia | Consórcio Encostas CIM-Jequitinhonha | Sócias consorciadas (consórcio privado) | **Confirmado** | Receita Federal | API |
+| Wellington José Amaral Belo | Construtora Itamaracá Ltda | Administrador desde 04/01/1999; também sócio via Belo Holding | **Confirmado** | Receita Federal | API |
+| Wellington José Amaral Belo | Belo Holding Ltda | Sócio-administrador desde 14/12/2022 | **Confirmado** | Receita Federal | API |
+| Diomedes Moreira Moura | Pilar Engenharia Ltda | Único sócio-administrador desde 06/08/2025 | **Confirmado** | Receita Federal | API |
 
 ---
 
-## Notas finais
+## 12. Linha do tempo expandida
 
-- Nenhuma das pessoas citadas neste relatório foi acusada de prática de irregularidade. Os achados aqui consolidados são **preliminares** e dependem de **documentação probatória** para qualificação como ilícito.
-- **Hipóteses não são fatos.** O relatório separa explicitamente as categorias.
-- Recomenda-se a consulta a um advogado público administrativista antes de qualquer providência formal (representação, notícia de fato ou ação).
-- Documentos obtidos por LAI devem ser anexados a este relatório, sucedendo as classificações dos achados.
-- A LGPD (Lei nº 13.709/2018) deve ser observada no tratamento das informações pessoais aqui mencionadas.
-- A coleta de dados de **pessoas que não exercem função pública** (familiares não-servidores) deve respeitar as bases legais da LGPD e a finalidade de interesse público da investigação.
+| Data | Evento | Pessoa(s) / PJ | Documento | Fonte |
+|---|---|---|---|---|
+| 22/08/1968 | Constituição da Heferauto Ltda (família Soares Pereira / Botelho) | Fernando Soares Pereira | Inscrição RFB | API |
+| 23/11/1987 | Constituição da Agro-Souto Comércio e Pecuária Ltda | Nilo Souto, Ana Maria Souto | Inscrição RFB | API |
+| 1989-06-21 | Entrada de Ana Maria Ramos Moreira Souto como sócia da Agro-Souto | Ana Maria | Receita Federal | API |
+| 1991-09-03 | Entrada de Leonardo Botelho Soares Pereira na Heferauto | Leonardo Botelho | Receita Federal | API |
+| 1995-01-04 | Entrada de Nilo Barbuda Souto como sócio da Agro-Souto | Nilo Souto | Receita Federal | API |
+| 14/07/2004 | Constituição do CNPJ eleitoral Nilo Souto — Vice-Prefeito 2004 | Nilo Souto | RFB | API |
+| 20/07/2004 | Constituição do CNPJ eleitoral Roberto Botelho — Prefeito 2004 | Roberto Botelho | RFB | API |
+| 25/06/1986 | Constituição do EMAPEJ (associação privada) | Marcio da Cunha Melo (presidente) | RFB | API |
+| 29/03/2005 | Constituição do CIMBAJE | Prefeitos da região | RFB | API |
+| 08/07/2015 | Constituição do CIM Jequitinhonha | Prefeitos da região | RFB | API |
+| 21/01/2015 | Constituição da Agro-Souto Nutrição Animal Ltda | Fernando + Gabriella | RFB | API |
+| 07/07/2017 | Constituição do CIMVAJER | Prefeitos da região | RFB | API |
+| 22/01/2019 | INAPTIDÃO da Heferauto Ltda (omissão de declarações) | Heferauto | RFB | API |
+| 15/11/2020 | Nilo Souto eleito Prefeito (49,02%) vs. Roberto Botelho (46,43%) | Nilo Souto | TSE | TSE |
+| 12/11/2024 | Baixa da Fazenda São Vicente Bananal (não relacionada à família) | Angelo Calmon de Sá et al. | RFB | API |
+| 06/10/2024 | Reeleição de Nilo Souto (59,87%) vs. Roberto Botelho (39,22%) | Nilo Souto | TSE | TSE |
+| 14/12/2022 | Constituição da Belo Holding Ltda | Wellington Belo | RFB | API |
+| 28/12/2022 | Belo Holding, Ita Holding e Schiavon Holding entram na Construtora Itamaracá | Wellington Belo et al. | RFB | API |
+| 01/01/2025 | Posse do mandato 2025-2028 (Nilo + Zé Rolinha + secretariado) | Equipe nova | Termo de posse (não recuperado) | — |
+| 06/01/2025 | CISNORJE decreta calamidade financeira (Dec. 001/2025) | Marcelo Adriano Xavier de Vasconcelos | Decreto | Estado de Minas; CISNORJE |
+| 2025 | CIM Jequitinhonha publica PL 52/2025 — Concorrência Pública 052/2025 — R$ 360,4 mi para serviços de engenharia | CIM Jequitinhonha | Edital | TCE-MG |
+| 07/05/2024 | Constituição do Consórcio Encostas CIM-Jequitinhonha (privado) | Itamaracá + Pilar Engenharia + Wellington Belo | RFB | API |
+| 24/02/2025 | Eron Costa Serrato assume Diretoria do Hospital São Miguel | Hospital São Miguel | Ato social | API |
+| 06/08/2025 | Diomedes Moreira Moura torna-se único sócio-administrador da Pilar Engenharia | Pilar Engenharia | Ato social | API |
+| **Fevereiro/2026** | **TCE-MG suspende PL 52/2025 do CIM Jequitinhonha (R$ 360,4 mi) e mais 10 processos de outros 8 consórcios (total > R$ 2 bi)** | **TCE-MG; CIM Jequitinhonha** | **Decisão do Pleno e da 1ª Câmara** | **TCE-MG; Estado de Minas; Diário do Comércio; SGP; Itatiaia; Jornal Bairros Net** |
+| 04/05/2026 | Falecimento de Fernando Souto Moreira em queda de avião em BH | Fernando Souto Moreira | Decreto de luto oficial; reportagens nacionais | Múltiplas |
 
 ---
 
-*Documento elaborado a partir exclusivamente de fontes públicas. Versão preliminar. Em caso de discordância sobre quaisquer fatos, a Prefeitura Municipal de Jequitinhonha/MG e demais pessoas e instituições mencionadas têm o direito de prestar esclarecimentos formais, que serão incorporados a versões revisadas.*
+## 13. Achados investigativos (expandidos)
+
+### Achado nº 1 — Cônjuge do prefeito ocupa Secretaria Municipal E é sócia de empresa do grupo familiar
+
+- **Classificação:** Fato comprovado (cargo + societário); análise jurídica em hipótese investigativa.
+- **Grau de risco:** **Médio-Alto.**
+- **Pessoas envolvidas:** Nilo Barbuda Souto; Ana Maria Ramos Moreira Souto.
+- **Empresas:** Agro-Souto Comércio e Pecuária Ltda (CNPJ 23.823.057/0001-96).
+- **Fato identificado:** Ana Maria é simultaneamente (i) Secretária Municipal de Desenvolvimento Social, (ii) Primeira-Dama, e (iii) sócia desde 1989 da empresa familiar com sede no município, da qual o próprio prefeito é sócio-administrador desde 1995.
+- **Norma potencialmente aplicável:** CF/88, art. 37; Súmula Vinculante nº 13/STF; **Lei nº 14.133/2021, art. 14, II (impedimento de licitar com pessoa jurídica cujo administrador, gerente ou sócio detenha vínculo de parentesco com agente público ordenador de despesa)**; Lei nº 8.429/1992 (arts. 9-11, com redação da Lei nº 14.230/2021).
+- **Diligências:** (1) consulta PNCP por CNPJ 23.823.057/0001-96 — verificar se a Prefeitura, o CIMVAJER, o CIMBAJE, o CISNORJE ou o CIM Jequitinhonha contratou a Agro-Souto em qualquer modalidade; (2) consulta ao Portal da Transparência por favorecido; (3) cruzar nota fiscal de medicamentos veterinários, materiais de construção, ferragens, brinquedos, vestuário, cosméticos, alimentos e armas/munições pagas pelo município.
+- **Órgãos competentes:** MPMG; TCE-MG; Câmara Municipal.
+
+### Achado nº 2 — Grupo econômico Souto: duas empresas ATIVAS no município + uma marca adicional
+
+- **Classificação:** Fato comprovado.
+- **Grau de risco:** **Alto** (se houver contratação pública).
+- **Pessoas:** Nilo Souto, Ana Maria Souto, Fernando Souto (falecido), Gabriella Souto, Isabella de Paula (nora).
+- **Empresas:** Agro-Souto Comércio e Pecuária Ltda; Agro-Souto Nutrição Animal Indústria e Comércio Ltda; Agrosouto Fert Sal (marca a confirmar).
+- **Núcleo do achado:** O grupo familiar do prefeito mantém estrutura comercial e industrial atuante no município, com escopo amplo (veterinária, ração, sal mineral, materiais diversos). A Agro-Souto Nutrição opera CNAE 1066-0/00 (fabricação de alimentos para animais) — produto de venda recorrente a programas agropecuários e assistência técnica rural municipal e a consórcios multifinalitários da região.
+- **Hipótese investigativa do usuário (Fernando "no centro de contratos e laranjas"):** **NÃO COMPROVADA em fontes consultadas.** A documentação cadastral mostra Fernando e Gabriella como sócios diretos da Agro-Souto Nutrição (não pessoas interpostas em estrutura terceira). Eventual configuração de "laranja" — entendido como pessoa que figura formalmente como sócia para ocultar o real beneficiário — depende de **prova adicional documental e financeira**, não disponível em OSINT puro. Recomenda-se diligência via Receita Federal (movimentação patrimonial), Coaf (operações suspeitas) e Polícia (quebras autorizadas), todas mediante representação formal.
+- **Norma potencialmente aplicável:** Lei nº 14.133/2021, art. 14, II; Lei nº 8.429/1992; Código Penal art. 312 (peculato), 317 (corrupção passiva), 333 (corrupção ativa), e arts. 337-E a 337-P (crimes da nova Lei de Licitações).
+- **Diligências:** Mesma diretriz do Achado nº 1, ampliada para o CNPJ 21.720.852/0001-23.
+
+### Achado nº 3 — Mesmo administrador / representante legal em empresas das duas principais famílias políticas do município
+
+- **Classificação:** Fato comprovado (cadastro); hipótese investigativa quanto a articulação.
+- **Grau de risco:** Médio.
+- **Pessoa central:** Francisco Cordeiro dos Santos (CPF ***880776**).
+- **Empresas:** Agro-Souto Comércio e Pecuária (representa Ana Maria Souto); Heferauto Ltda (representa Leonardo Botelho Soares Pereira).
+- **Interpretações concorrentes:**
+  (a) Hipótese benigna: Francisco é contador/advogado local que atende vários comerciantes, naturalmente atravessando famílias politicamente concorrentes;
+  (b) Hipótese a investigar: pode ser operador comum de estruturas societárias do município, com acesso a informações sensíveis das duas famílias e a posição privilegiada para articular contratações cruzadas.
+- **Diligências:** Verificar JUCEMG/Receita Federal por outras empresas em que Francisco Cordeiro dos Santos figura como administrador, representante legal ou procurador; cruzar com lista de fornecedores da Prefeitura e dos consórcios; verificar registro de OAB e/ou CRC; confirmar endereço comercial.
+
+### Achado nº 4 — TCE-MG SUSPENDEU LICITAÇÃO DO CIM JEQUITINHONHA DE R$ 360,4 MILHÕES (PL 52/2025)
+
+- **Classificação:** **Fato comprovado** (ato de TCE-MG); a relação com Jequitinhonha/MG depende de adesão.
+- **Grau de risco:** **Alto** (escala financeira e potencial sistêmico).
+- **Pessoas envolvidas:** José Eduardo de Paula Rabelo (presidente do CIM Jequitinhonha — não é o prefeito de Jequitinhonha/MG); demais membros da diretoria do consórcio; eventuais agentes do município licitante.
+- **Fato identificado:** O Tribunal de Contas do Estado de Minas Gerais, em decisão plenária e da 1ª Câmara em fevereiro de 2026, suspendeu o Processo Licitatório 52/2025 (Concorrência Pública 052/2025) do CIM Jequitinhonha, no valor de R$ 360.385.674,44, destinado a "manutenção preventiva e corretiva de vias urbanas/rurais" via sistema de registro de preços, em conjunto com outros 10 processos de 8 consórcios mineiros que totalizaram mais de R$ 2 bilhões.
+- **Irregularidades apontadas pelo TCE-MG (cf. fontes):** Ausência de detalhamento; ausência de projetos básicos e levantamentos específicos; modalidade inadequada; ausência de memória de cálculo; especificações técnicas insuficientes; risco de orçamento distorcido; quantitativos superestimados; **indícios de direcionamento**.
+- **Implicações para Jequitinhonha/MG:** A verificar (i) se Jequitinhonha é membro pleno do CIM Jequitinhonha (lista dos 20 municípios não recuperada por inteiro); (ii) se Jequitinhonha aderiu à ARP daí decorrente; (iii) qualquer pagamento efetuado pelo município em favor do consórcio ou em decorrência da ata.
+- **Diligências:** LAI ao CIM Jequitinhonha; LAI ao TCE-MG para cópia da decisão de suspensão; LAI à Prefeitura de Jequitinhonha sobre eventual adesão à ARP.
+- **Órgãos competentes:** TCE-MG (em curso); MPMG (eventual notícia de fato).
+
+### Achado nº 5 — Consórcio privado constituído poucos meses antes da licitação suspensa, com nome colado ao CIM Jequitinhonha
+
+- **Classificação:** Indício forte; hipótese investigativa.
+- **Grau de risco:** **Alto** (configura, em tese, modus operandi clássico).
+- **Empresas:** Consórcio Encostas CIM-Jequitinhonha (CNPJ 55.035.108/0001-01); Construtora Itamaracá Ltda; Pilar Engenharia Ltda.
+- **Fato identificado:** Consórcio empresarial privado constituído em 07/05/2024, com sede no escritório da Construtora Itamaracá em BH, no exato escopo objeto da licitação posteriormente suspensa pelo TCE-MG (engenharia para encostas, vias). **Nome corporativo "CIM-JEQUITINHONHA" sinaliza vinculação direta ao consórcio público.**
+- **Hipóteses concorrentes:** (a) constituição legítima para participação competitiva; (b) constituição direcionada a vencer determinada licitação.
+- **Diligências:** Verificar PNCP pela existência de propostas ou adjudicação do Consórcio Encostas CIM-Jequitinhonha no PL 52/2025 ou em qualquer outro processo do CIM Jequitinhonha ou CIMVAJER; verificar oferta econômica, contraproposta, prazo etc. Verificar se foi formalmente DESCLASSIFICADO ou se a suspensão ocorreu antes da fase competitiva.
+- **Órgãos competentes:** TCE-MG; CADE (eventual cartel); MPMG.
+
+### Achado nº 6 — CIMVAJER e CIMBAJE são primariamente consórcios DE SAÚDE (e não apenas multifinalitários)
+
+- **Classificação:** Fato comprovado.
+- **Grau de risco:** Médio-Alto (reforço da hipótese central do usuário sobre a esposa do Secretário de Saúde).
+- **Núcleo:** Ambos os consórcios têm CNAE principal 8660-7/00 e CNAEs secundários compatíveis com pronto-socorro, SAMU, vacinação, laboratórios. Jequitinhonha é membro do CIMBAJE; o prefeito de Jequitinhonha preside o CIMVAJER. **Ambos os consórcios podem ser empregadores ou contratantes de profissionais de saúde — incluindo a hipotética esposa do Secretário Henrique.**
+
+### Achado nº 7 — Calamidade financeira do CISNORJE (SAMU)
+
+- Inalterado em relação à versão anterior. Permanecem as recomendações de diligência sobre adimplência de Jequitinhonha.
+
+### Achado nº 8 — Concentração patronímica e hipóteses de parentesco
+
+- Inalterado em essência. Os patronímicos coincidentes (Ramos, Souto, Moreira, Botelho) permanecem como indícios médios a confirmar por documentação civil.
+
+### Achado nº 9 — Heferauto Ltda inapta há 7 anos
+
+- **Classificação:** Fato comprovado.
+- **Grau de risco:** Baixo a Médio.
+- **Pessoa central:** Leonardo Botelho Soares Pereira.
+- **Fato identificado:** A Heferauto Ltda — empresa do município de Jequitinhonha, do segmento de peças automotivas — está INAPTA na Receita Federal desde 22/01/2019 por omissão de declarações. Status "inapta" significa que a PJ pode estar ativa de fato mas em descumprimento de obrigações declaratórias.
+- **Diligência:** verificar atividade efetiva da empresa, eventual sucessão por outra PJ, e eventual contratação prévia (antes de 2019) com o município.
+
+### Achado nº 10 — Filho do prefeito (Fernando Moreira Souto), centralidade do grupo econômico
+
+- **Classificação:** Fato comprovado quanto à atuação societária; hipótese investigativa quanto a "laranjas" e "contratos ilícitos" (afirmação do usuário não corroborada nesta versão por fontes públicas).
+- **Núcleo:** Fernando Moreira Souto (CPF ***339646**) era, à data do falecimento, sócio-administrador da Agro-Souto Nutrição Animal Ltda e administrava a Agro-Souto Comércio (do pai) e a fábrica de sal mineral familiar. Reportagens descrevem-no como "peça central na gestão das propriedades e empreendimentos familiares". A morte súbita em 04/05/2026 abre questão sucessória e patrimonial.
+- **Diligência:** Verificar inventário (eventual), continuidade societária pós-falecimento (Receita Federal indica que a empresa permaneceu ATIVA até a última consulta, sem alteração societária), e possíveis ações de regularização patrimonial. **Especificamente, confrontar com a hipótese do usuário de "laranjas":** requer (i) listagem completa de contratos da Agro-Souto Nutrição Animal e correlatas; (ii) movimentação financeira; (iii) declarações de IR de Fernando (informação restrita por sigilo fiscal — exige decisão judicial ou administrativa específica).
+
+---
+
+## 14. Enquadramento jurídico preliminar (expandido)
+
+| Fato ou conduta (em hipótese) | Norma de referência | Tipologia provável |
+|---|---|---|
+| **Cônjuge do prefeito ocupando Secretaria Municipal** | CF/88 art. 37; SV13/STF; ADC 12/STF | Em tese excluído pela jurisprudência STF se cargo político; mas demanda análise concreta de aptidão técnica e desvio de finalidade |
+| **Cônjuge do prefeito como sócia de empresa privada com atividade no município** | Lei nº 14.133/2021, art. 14, II | Configura **impedimento legal de licitar/contratar** com o município, se houver pretendida contratação |
+| **Eventual contratação da Agro-Souto pela Prefeitura ou consórcios** | Lei nº 14.133/2021 arts. 14, 155-158; Lei nº 8.429/1992 arts. 9-11; Código Penal arts. 337-F a 337-P | Nulidade absoluta; possível improbidade; possível crime contra a Administração |
+| **Acúmulo Prefeito + Presidente de Consórcio Público** | Lei nº 11.107/2005; Decreto nº 6.017/2007 | Em si lícito; exige rigor adicional de governança e impessoalidade |
+| **Patronímicos coincidentes em primeiro escalão (parentesco a confirmar)** | SV13/STF; CF/88 art. 37 | Eventual nepotismo direto (servidores não-políticos) ou cruzado (cargos políticos), conforme prova documental |
+| **Esposa do Secretário de Saúde contratada/credenciada por consórcio de saúde** | CF/88 art. 37; SV13/STF; Lei nº 12.813/2013 (parâmetro); Lei nº 8.429/1992 | Conflito de interesses; eventual nepotismo via interposta pessoa jurídica; eventual improbidade |
+| **Constituição de consórcio empresarial privado com nome colado ao consórcio público licitante** | Lei nº 14.133/2021, arts. 5º (princípios), 78 (consórcios na licitação); Lei nº 12.529/2011 (Cade — concorrência) | Em si lícito; **se confirmado direcionamento, fraude à licitação (art. 337-F do CP) e improbidade administrativa** |
+| **Licitação suspensa do CIM Jequitinhonha (PL 52/2025 — R$ 360,4 mi)** | Lei nº 14.133/2021, arts. 17-23; Lei nº 8.443/1992 (TCU análoga); Constituição Estadual MG art. 76 (competência TCE-MG) | Suspensão acautelatória pelo TCE-MG; possível responsabilização posterior do gestor responsável |
+| **CISNORJE em calamidade financeira (R$ 14-56,8 mi)** | LRF (LC 101/2000); Lei nº 11.107/2005 | Apuração da inadimplência dos municípios consorciados, inclusive Jequitinhonha; gestão financeira temerária |
+
+---
+
+## 15. Diligências formais expandidas e priorizadas
+
+### Prioridade 1 — Imediata
+
+1. **Consulta PNCP por CNPJ:**
+   - 23.823.057/0001-96 (Agro-Souto Comércio e Pecuária Ltda)
+   - 21.720.852/0001-23 (Agro-Souto Nutrição Animal Ltda)
+   - 30.018.048/0001-98 (Construtora Itamaracá Ltda)
+   - 19.984.948/0001-57 (Pilar Engenharia Ltda)
+   - 55.035.108/0001-01 (Consórcio Encostas CIM-Jequitinhonha)
+   - 21.528.047/0001-00 (Heferauto Ltda)
+   - 48.886.234/0001-04 (Belo Holding Ltda)
+
+2. **LAI à Prefeitura Municipal de Jequitinhonha:**
+   - Organograma nominal completo (efetivos, comissionados, temporários, contratados, terceirizados);
+   - Atos de nomeação e exoneração 2021-2026;
+   - Lista de pregoeiros, agentes de contratação, equipe de apoio, comissões, fiscais e gestores de contrato — com portaria de designação;
+   - Relação completa de processos licitatórios 2021-2026 (incluindo dispensas e inexigibilidades);
+   - Quais contratos foram firmados (em qualquer modalidade) com os CNPJs acima listados;
+   - Declaração formal de inexistência de conflito de interesse dos secretários (especialmente Saúde);
+   - Pareceres da PGM sobre nepotismo, conflito de interesse e ADC 12/SV13;
+   - Pareceres da Controladoria interna sobre os mesmos temas;
+   - Listagem de adesões a Atas de Registro de Preços de consórcios (CIM Jequitinhonha, CIMVAJER, CIMBAJE, CISNORJE);
+   - Valores efetivamente repassados a cada consórcio por exercício 2021-2026;
+   - Designação de representante do município em cada consórcio (titulares e suplentes).
+
+3. **LAI ao CIMVAJER:**
+   - Estatuto vigente e versões anteriores;
+   - Atas de assembleia 2021-2026;
+   - Contratos de programa, rateio e adesão entre Jequitinhonha e o consórcio;
+   - Folha de pagamento completa do consórcio (massivo legal: dados pessoais com base no interesse público de proteção da legalidade da despesa);
+   - Lista de empregados, contratados, credenciados, prestadores;
+   - Editais e atas de credenciamento de profissionais de saúde;
+   - Designação do fiscal do contrato de programa/rateio com Jequitinhonha.
+
+4. **LAI ao CIMBAJE e ao CISNORJE:**
+   - Mesmo escopo do CIMVAJER.
+
+5. **LAI ao CIM Jequitinhonha:**
+   - Estatuto;
+   - Lista completa dos 20 municípios consorciados (verificar adesão de Jequitinhonha);
+   - Cópia integral do edital, ata e decisões do PL 52/2025;
+   - Cópia da decisão TCE-MG de suspensão;
+   - Outros pregões e atas vigentes;
+   - Adesões formalizadas por outros municípios.
+
+### Prioridade 2
+
+6. **Receita Federal / JUCEMG:**
+   - Conferência de empresas em que Nilo Souto, Ana Maria Souto, Fernando Souto (espólio), Gabriella Souto, Isabella de Paula, Francisco Cordeiro dos Santos, Marco Antonio Moreira, Wellington José Amaral Belo, Marcio Duarte Camara, Paulo Cesar Schiavon, Leonardo Botelho Soares Pereira figuram como sócios, administradores ou procuradores.
+   - Verificação de eventual filial da Agro-Souto Comércio (procurar CNPJ específico da Agrosouto Fert Sal).
+
+7. **Cartórios de Registro Civil de Jequitinhonha:**
+   - Verificação de parentesco (até 3º grau) entre os patronímicos "Ramos", "Souto", "Moreira", "Botelho", "Antunes" — requer pedido fundamentado, eventualmente via judicial.
+
+8. **TSE / DivulgaCandContas:**
+   - Histórico eleitoral completo de Nilo Souto (1996-2024); todos os secretários; eventual candidatura de Marco Antonio Moreira ou Laura Botelho Antunes;
+   - Listagem de doadores de campanha de Nilo Souto em 2020 e 2024 — cruzamento com fornecedores municipais.
+
+9. **CRMV-MG e CRMV-DF:**
+   - Habilitação profissional de Nilo Barbuda Souto, Fernando Moreira Souto (post-mortem), Gabriella de Moreira Souto, Isabella de Paula como médicos veterinários — verificar se exercem efetivamente a profissão.
+
+10. **CNES / DATASUS:**
+    - Profissionais lotados em estabelecimentos municipais e regionais; cruzamento com sobrenomes dos secretários.
+
+11. **TCE-MG:**
+    - Consulta processual a julgamentos sobre Jequitinhonha e seus prefeitos (Nilo, Roberto Botelho); jurisprudência sobre CIM Jequitinhonha, CIMVAJER, CIMBAJE.
+
+12. **MPMG:**
+    - Notícia de Fato preliminar com base neste relatório (depois de validação documental adicional).
+
+### Prioridade 3
+
+13. **Polícia Civil e Polícia Federal (eventual):**
+    - Em caso de elementos consistentes de fraude licitatória ou crime contra a Administração, representação para apuração.
+
+14. **CGU (Federal):**
+    - Verificação de recursos federais transferidos a Jequitinhonha (Transferegov, SICONV, BB-Repasses) e seu uso.
+
+15. **Câmara Municipal de Jequitinhonha:**
+    - Requerimentos de informação; eventual instauração de Comissão Parlamentar de Inquérito; pedido formal de informações sobre acúmulo de cargos do prefeito em consórcios.
+
+---
+
+## 16. Conclusão técnica (atualizada)
+
+### Fatos comprovados documentalmente em bases públicas oficiais (BrasilAPI/Receita Federal + atos administrativos):
+
+1. Nilo Barbuda Souto é prefeito reeleito de Jequitinhonha (PDT) em mandato 2025-2028, tendo sido também eleito em 2020 e candidato a Vice em 2004.
+2. Nilo Barbuda Souto é **sócio-administrador desde 04/01/1995** da Agro-Souto Comércio e Pecuária Ltda (CNPJ 23.823.057/0001-96), empresa **ATIVA** com sede em Jequitinhonha (Av. Pedro Ferreira, 21), ramo veterinário com 10 atividades secundárias variadas (inclusive armas e munições).
+3. Ana Maria Ramos Moreira Souto, esposa do prefeito, ocupa a Secretaria Municipal de Desenvolvimento Social E é sócia da mesma Agro-Souto Comércio e Pecuária Ltda desde 21/06/1989, representada legalmente por Francisco Cordeiro dos Santos.
+4. Fernando Moreira Souto, falecido em 04/05/2026, e Gabriella de Moreira Souto (irmã, residente na Austrália) eram, à data da consulta, sócios da Agro-Souto Nutrição Animal Indústria e Comércio Ltda (CNPJ 21.720.852/0001-23), empresa ATIVA, contabilizada pelo escritório "Pateco Contabilidade".
+5. Nilo Barbuda Souto é Presidente da Diretoria Executiva 2025/2026 do CIMVAJER (consórcio público de saúde, CNAE principal 8660-7/00).
+6. O CIMVAJER, o CIMBAJE e o CISNORJE têm prestação efetiva de serviços de saúde (pronto-socorro, SAMU, laboratórios, vacinação); Jequitinhonha é membro pelo menos do CIMBAJE e (via presidência) do CIMVAJER.
+7. **O TCE-MG suspendeu em fevereiro/2026 o PL 52/2025 do CIM Jequitinhonha (R$ 360,4 mi)** entre outras 10 licitações de 8 consórcios mineiros, com indícios de direcionamento.
+8. **Em 07/05/2024 foi constituído o Consórcio Encostas CIM-Jequitinhonha** (consórcio empresarial privado) pela Construtora Itamaracá e pela Pilar Engenharia, com sede no escritório da Itamaracá em BH, com nome corporativo colado ao do consórcio público licitante.
+9. CISNORJE decretou calamidade financeira em 06/01/2025 (Dec. 001/2025).
+10. Francisco Cordeiro dos Santos é administrador-representante legal em pelo menos duas empresas de Jequitinhonha — uma da família Souto (Agro-Souto Comércio) e uma da família Soares Pereira/Botelho (Heferauto, atualmente INAPTA).
+11. Roberto Alcântara Botelho (PSDB) — adversário recorrente em 2020 e 2024 — foi prefeito de Jequitinhonha por 3 mandatos e ex-Secretário Municipal de Saúde; é cirurgião-dentista (UFMG); casado com Sônia Madi (Angelus).
+
+### Indícios fortes ainda não confirmados como fato:
+
+12. Possível parentesco familiar entre os patronímicos "Ramos" (3 secretários + 1 servidor) e entre "Souto" (Nilo de Jequitinhonha e Márcio de Pedra Azul / pres. CIMBAJE).
+13. Possível relação familiar entre Leonardo Botelho Soares Pereira (sócio Heferauto) e Roberto Alcântara Botelho ou Laura Botelho Antunes.
+14. Possível direcionamento da licitação suspensa do CIM Jequitinhonha em favor do Consórcio Encostas CIM-Jequitinhonha (a comprovar via PNCP e TCE-MG).
+15. Possível contratação direta ou indireta das empresas do grupo Souto pela Prefeitura, pelos consórcios ou por seus parceiros (a comprovar via PNCP).
+
+### Hipóteses do usuário ainda não confirmadas em fontes públicas:
+
+16. **Fernando Souto Moreira "no centro de contratos licitatórios ilícitos e pessoas jurídicas de laranja":** os dados cadastrais oficiais mostram Fernando como sócio direto (não interposto) da Agro-Souto Nutrição Animal Ltda, ao lado da irmã Gabriella; **a hipótese de "laranjas" e "contratos ilícitos" não foi confirmada por fontes abertas neste levantamento e exige diligência adicional (PNCP, Receita Federal, Coaf, MPMG).**
+17. Esposa do Secretário Henrique vinculada a consórcio público.
+18. Existência de "Laura Botelho Antunes" como secretária.
+19. Cônjuge alegado de Julimara Ramos Brito (Marco Antonio Moreira).
+20. Presidência simultânea de outros consórcios pelo prefeito.
+
+### Não localizados em fonte pública consultada (LAI necessária):
+
+21. Folha de pagamento nominal do município.
+22. Atos de nomeação dos secretários (com data e justificativa).
+23. Identidade dos pregoeiros, fiscais de contrato e ordenadores de despesa.
+24. Contratos e empenhos por fornecedor.
+25. Adesões da Prefeitura a Atas de Registro de Preços de consórcios.
+
+### Grau geral de criticidade preliminar consolidado:
+
+**ALTO.** Há (a) decisão pública do TCE-MG suspendendo licitação de R$ 360,4 mi do consórcio CIM Jequitinhonha; (b) constituição cronologicamente suspeita de consórcio privado com nome colado ao consórcio público; (c) prefeito presidindo consórcio de saúde com competências fiscalizatórias e contratuais; (d) prefeito e esposa simultaneamente em cargos políticos e como sócios ativos de empresa local com escopo amplo (incluindo materiais sensíveis); (e) calamidade financeira regional do SAMU; (f) múltiplas hipóteses do usuário ainda pendentes de confirmação — mas com substrato cadastral parcialmente compatível.
+
+---
+
+## 17. Fontes adicionais (acrescidas à versão anterior)
+
+| Título | Órgão / site | Link | Data de acesso | Tipo | Confiabilidade |
+|---|---|---|---|---|---|
+| API CNPJ Município de Jequitinhonha (18.083.659/0001-14) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/18083659000114 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ CIMVAJER (28.168.515/0001-14) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/28168515000114 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ CIMBAJE (07.306.549/0001-58) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/07306549000158 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ CIM Jequitinhonha (22.835.076/0001-70) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/22835076000170 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Agro-Souto Comércio e Pecuária (23.823.057/0001-96) | Receita Federal via BrasilAPI / ReceitaWS | https://brasilapi.com.br/api/cnpj/v1/23823057000196 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Agro-Souto Nutrição Animal (21.720.852/0001-23) | Receita Federal via BrasilAPI / ReceitaWS | https://brasilapi.com.br/api/cnpj/v1/21720852000123 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Eleições 2004 Nilo Souto Vice-Prefeito (06.420.229/0001-61) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/06420229000161 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Eleições 2004 Roberto Botelho Prefeito (06.680.503/0001-31) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/06680503000131 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Consórcio Encostas CIM-Jequitinhonha (55.035.108/0001-01) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/55035108000101 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Construtora Itamaracá (30.018.048/0001-98) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/30018048000198 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Pilar Engenharia (19.984.948/0001-57) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/19984948000157 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Belo Holding (48.886.234/0001-04) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/48886234000104 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ EMAPEJ (20.180.972/0001-12) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/20180972000112 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Heferauto (21.528.047/0001-00) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/21528047000100 | 27/05/2026 | Oficial federal | Alta |
+| API CNPJ Hospital São Miguel (21.528.112/0001-90) | Receita Federal via BrasilAPI | https://brasilapi.com.br/api/cnpj/v1/21528112000190 | 27/05/2026 | Oficial federal | Alta |
+| Estado de Minas — TCE-MG suspende licitações de consórcios | Estado de Minas | https://www.em.com.br/colunistas/bertha-maakaroun/2026/05/7413912-licitacoes-de-consorcios-sao-suspensas-pelo-tce.html | 27/05/2026 | Jornalística | Alta |
+| Diário do Comércio — TCE-MG suspende licitações de consórcios | Diário do Comércio | https://diariodocomercio.com.br/legislacao/tce-mg-suspende-licitacoes-consorcios-publicos/ | 27/05/2026 | Jornalística | Alta |
+| SGP — TCEMG suspende licitações de consórcios públicos | SGP Soluções | https://sgpsolucoes.com.br/site/tcemg-suspende-licitacoes-de-consorcios-publicos-que-somam-mais-de-r2-bilhoes/ | 27/05/2026 | Especializada | Alta |
+| Itatiaia — TCE suspende contratos de mais de R$ 2 bi | Itatiaia | https://www.itatiaia.com.br/politica/tce-suspende-contratos-de-mais-de-r-2-bi-consorcios-previam-compra-ate-de-videogames | 27/05/2026 | Jornalística | Alta |
+| TCE-MG (notícia institucional) | TCE-MG | https://www.tce.mg.gov.br/TCEMG-suspende-licitacoes-de-consorcios-publicos-que-somam-mais-de-R-2-bilhoes.html/Noticia/1111628582 | 27/05/2026 | Oficial | Alta |
+| Reportagem perfil Fernando Souto Moreira (O Tempo) | O Tempo | https://www.otempo.com.br/cidades/2026/5/4/saiba-quem-era-o-filho-de-prefeito-morto-em-queda-de-aviao-em-bh-dedicado-e-pilar-da-familia | 27/05/2026 | Jornalística | Alta |
+| Reportagem (Hoje em Dia) — corpo de Fernando Souto Moreira | Hoje em Dia | https://www.hojeemdia.com.br/minas/corpo-de-fernando-souto-moreira-sera-velado-nesta-terca-em-jequitinhonha-1.1115672 | 27/05/2026 | Jornalística | Alta |
+| Metrópoles — filho do prefeito | Metrópoles | https://www.metropoles.com/minas-gerais/filho-do-prefeito-de-jequitinhonha-mg-morre-em-queda-de-aviao-em-bh | 27/05/2026 | Jornalística | Alta |
+| Adesão ARP 036/2023 — Fortuna de Minas | Prefeitura de Fortuna de Minas/MG | https://fortunademinas.mg.gov.br/adesao-da-ata-de-registro-de-precos-no-036-2023-do-consorcio-integrado-multifinalitario-do-vale-do-jequitinhonha-cim-jequitinhonha/ | 27/05/2026 | Oficial | Alta |
+| Adesão ARP 053/2024 — Saquarema/RJ (Contrato 046/2025) | Prefeitura de Saquarema/RJ | https://licitacoes.saquarema.rj.gov.br/cat-licitacao/contrato-046-2025-adesao-a-ata-de-registro-de-precos-n053-2024-pregao-eletronico-027-2024-consorcio-integrado-multifinalitario-do-vale-do-jequitinhonha-mg/ | 27/05/2026 | Oficial | Alta |
+| Adesão ARP 065/2024 — Saquarema/RJ (Contrato 068/2025) | Prefeitura de Saquarema/RJ | https://licitacoes.saquarema.rj.gov.br/cat-licitacao/contrato-068-2025-adesao-a-ata-de-registro-de-precos-no-065-2024-pregao-eletronico-no-033-2024-consorcio-integrado-multifinalitario-do-vale-do-jequitinhonha-cim/ | 27/05/2026 | Oficial | Alta |
+| Roberto Alcântara Botelho — PBH/SLU (biografia) | PBH | https://prefeitura.pbh.gov.br/slu/roberto-alcantara-botelho | 27/05/2026 | Oficial municipal | Alta |
+| Roberto Alcântara — empreendedor (sobre Sônia Madi e Angelus) | Empreendedor.com.br | https://empreendedor.com.br/empreendedorismo/roberto_alcantara/ | 27/05/2026 | Especializada | Média |
+| Calamidade CISNORJE — Diário Tribuna | Diário Tribuna | https://diariotribuna.com.br/?p=28250 | 27/05/2026 | Jornalística regional | Média |
+| Calamidade CISNORJE — Correio de Minas | Correio de Minas | https://correiodeminas.com.br/2025/01/22/caos-financeiro-ameaca-o-samu-em-86-municipios/ | 27/05/2026 | Jornalística regional | Média-alta |
+| Rombo R$ 56,8 mi — O Fator | O Fator | https://ofator.com.br/informacao/samu-denuncia-rombo-de-r-568-mi-e-servico-pode-parar-em-minas/ | 27/05/2026 | Jornalística | Média |
+
+---
+
+## Notas finais (versão expandida)
+
+- A análise se baseia em registros públicos oficiais (Receita Federal/BrasilAPI), atos administrativos do TCE-MG, decisões judiciais públicas e reportagens jornalísticas verificáveis. **Toda interpretação jurídica é preliminar.**
+- A hipótese do usuário de que "Fernando Souto Moreira estaria no centro de contratos licitatórios ilícitos e pessoas jurídicas de laranja" **permanece como informação inicial pendente de confirmação documental**. Os dados cadastrais oficiais mostram Fernando como sócio direto de uma única PJ (Agro-Souto Nutrição Animal) — não como interposta pessoa em estruturas terceiras detectáveis em OSINT puro. A confirmação ou descarte da hipótese exige (i) PNCP por CNPJ, (ii) Receita Federal (movimentação patrimonial e declarações), (iii) Coaf (relatórios de inteligência financeira) e (iv) MPMG (notícia de fato). Eventuais "laranjas" típicos costumam ser detectados quando há descompasso entre patrimônio declarado e movimentação financeira — informação **não acessível em OSINT.**
+- A morte súbita de Fernando Moreira Souto em 04/05/2026 cria janela investigativa peculiar (inventário, sucessão, continuidade societária e fiscal das empresas) que merece especial atenção.
+- **Nenhuma pessoa citada está acusada de crime ou improbidade.** Os achados são preliminares.
+- **A LGPD (Lei nº 13.709/2018) foi observada** no tratamento de informações pessoais: CPFs foram mantidos com mascaramento original da base oficial; nomes públicos de agentes políticos e administradores societários foram coletados em fontes oficiais (Receita Federal) e contextualizados em finalidade de interesse público (controle social, conforme arts. 7º, II, IV, IX e art. 11, II, da LGPD).
+- Recomenda-se que o destinatário deste relatório (a) **valide as fontes** consultando as URLs e os CNPJs citados, (b) **promova as diligências da Seção 15** antes de qualquer ato formal (representação, notícia de fato, denúncia), (c) consulte profissional habilitado em Direito Administrativo e Processo Penal.
+
+---
+
+*Versão 2 — Expandida — elaborada exclusivamente a partir de fontes públicas oficiais e jornalísticas verificáveis. Em caso de discordância sobre quaisquer fatos, a Prefeitura Municipal de Jequitinhonha/MG, os consórcios CIMVAJER, CIMBAJE, CIM Jequitinhonha e CISNORJE, e as pessoas jurídicas e físicas mencionadas têm o direito de prestar esclarecimentos formais, que serão incorporados a versões revisadas.*
